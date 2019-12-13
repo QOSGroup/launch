@@ -1,0 +1,4 @@
+.idea
+gen.sh
+go.mod
+main.go

@@ -1,0 +1,335 @@
+{
+  "genesis_time": "2019-12-13T10:29:06.048343371Z",
+  "chain_id": "qoschain-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "1048576",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "qcp": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
+      },
+      "qcps": null
+    },
+    "approve": {
+      "approves": null
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "params": {
+        "normal_min_deposit": "100000",
+        "normal_min_proposer_deposit_rate": "0.334000000000000000",
+        "normal_max_deposit_period": "604800000000000",
+        "normal_voting_period": "1209600000000000",
+        "normal_quorum": "0.334000000000000000",
+        "normal_threshold": "0.500000000000000000",
+        "normal_veto": "0.334000000000000000",
+        "normal_penalty": "0.000000000000000000",
+        "normal_burn_rate": "0.200000000000000000",
+        "important_min_deposit": "500000",
+        "important_min_proposer_deposit_rate": "0.334000000000000000",
+        "important_max_deposit_period": "604800000000000",
+        "important_voting_period": "1209600000000000",
+        "important_quorum": "0.334000000000000000",
+        "important_threshold": "0.500000000000000000",
+        "important_veto": "0.334000000000000000",
+        "important_penalty": "0.000000000000000000",
+        "important_burn_rate": "0.200000000000000000",
+        "critical_min_deposit": "1000000",
+        "critical_min_proposer_deposit_rate": "0.334000000000000000",
+        "critical_max_deposit_period": "604800000000000",
+        "critical_voting_period": "1209600000000000",
+        "critical_quorum": "0.334000000000000000",
+        "critical_threshold": "0.500000000000000000",
+        "critical_veto": "0.334000000000000000",
+        "critical_penalty": "0.000000000000000000",
+        "critical_burn_rate": "0.200000000000000000"
+      },
+      "proposals": null
+    },
+    "guardian": {
+      "guardians": [
+        {
+          "description": "",
+          "guardian_type": 1,
+          "address": "qosacc1m5f6se6u2myrga7l3jhacy9hcnftszvgn0wqus",
+          "creator": ""
+        }
+      ]
+    },
+    "qsc": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
+      },
+      "qscs": null
+    },
+    "distribution": {
+      "community_fee_pool": "0",
+      "last_block_proposer": "",
+      "pre_distribute_amount": "0",
+      "validators_history_period": null,
+      "validators_current_period": null,
+      "delegator_earning_info": null,
+      "delegator_income_height": null,
+      "validator_eco_fee_pools": null,
+      "params": {
+        "proposer_reward_rate": "0.010000000000000000",
+        "community_reward_rate": "0.020000000000000000",
+        "delegator_income_period_height": "720",
+        "gas_per_unit_cost": "100"
+      }
+    },
+    "mint": {
+      "inflation_phrases": [
+        {
+          "end_time": "2023-10-20T00:00:00Z",
+          "total_amount": "25500000000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2027-10-20T00:00:00Z",
+          "total_amount": "12750000000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2031-10-20T00:00:00Z",
+          "total_amount": "6375000000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2035-10-20T00:00:00Z",
+          "total_amount": "3187500000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2039-10-20T00:00:00Z",
+          "total_amount": "1593750000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2043-10-20T00:00:00Z",
+          "total_amount": "796875000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2047-10-20T00:00:00Z",
+          "total_amount": "796875000000",
+          "applied_amount": "0"
+        }
+      ],
+      "first_block_time": "1576232946",
+      "applied_qos_amount": "10000123776522",
+      "total_qos_amount": "61000123776522"
+    },
+    "stake": {
+      "gen_txs": null,
+      "params": {
+        "max_validator_cnt": "21",
+        "voting_status_len": "10000",
+        "voting_status_least": "7000",
+        "survival_secs": "28800",
+        "unbond_frozen_height": "259200",
+        "max_evidence_age": "1814400000000000",
+        "slash_fraction_double_sign": "0.200000000000000000",
+        "slash_fraction_downtime": "0.000100000000000000"
+      },
+      "validators": null,
+      "val_votes_info": null,
+      "val_votes_in_window": null,
+      "delegators_info": null,
+      "delegator_unbond_info": null,
+      "redelegations_info": null,
+      "current_validators": null
+    },
+    "bank": {
+      "accounts": [
+        {
+          "account_address": "qosacc1hlwccn4v205hjgc43erxnlrycu77rp7fsnyrw6",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1mhdphazuaq54kwmftl5630acek8qyuwk5ezvgg",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "20000000",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1cg0gtkk2e5656hzwhw8ahlemzz3rnxwja30dqa",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc149n3dksw9rxkz4revua75a6n4r3echz46l342e",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "2192520",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc102nhm8dt69p2jynnx5w6kvxepyeu63sm3qtfd8",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "3769738",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc14fr6cemgtcn47du46why3drayrzhme0ug8gcsa",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc10padhk03ke48z2frahv6nj9ema0uuyjeeshugg",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "13000000",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1menz4j7gccfdeufjmdxn9muq3gykhn9sa3fn36",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "18900000",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1gv80dft8wfqa6jsu83mlftl0p8xcthsgmjmglz",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "8000000",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1cp097ud079wdnhps9h4xpesxpegxepu74pa5wm",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1js5xkamjtpf5n2jhzf7wr858xftvyknsy8h8ah",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "2188918",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1v0qdkc5de3x8vnjz4mxja4cmczw0zefuehs3f5",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1j33hgenprh6u30npt8449yxm0fv0lcn6d0drz8",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "9256382",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1ykjvpj5ghv05nyf7dqlym5vdkkdlttzdf8advx",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "5200500",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc10dacuhypreyynjpjudjunk080jyvpa9mspqyxq",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1ug79m5a9d80zuhp5q88k8vtjc7fqwn522ch5tf",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "15244",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1xgdpkgax4gtkfv9kqdmasfmyux69736urqvlwe",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "14698600",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1sv3ptuxtzjrqrwryu43jfqyxgrxxfkvhkttdyx",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "4839191",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1qgt4n09hlfl4346caw7jj5m6kl5hcpm97knrgh",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "14908709",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1ufkcp4la834x9cwwc2q448ma0jh8c2nzaqejg6",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "3769738",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc18j2s8gazfvtgvmjh6r8txd6yrret0qy6303tpm",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "3036976",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1666666666664",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1nqff3vxyuxr7aeeust0edcnznff856s9lrny0z",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "8333333333336",
+          "qscs": null
+        }
+      ],
+      "lock_info": {
+        "locked_account": "qosacc1nqff3vxyuxr7aeeust0edcnznff856s9lrny0z",
+        "receiver": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
+        "total_amount": "10000000000000",
+        "released_amount": "1666666666664",
+        "release_time": "2019-12-16T00:00:00Z",
+        "release_interval": "30",
+        "release_times": "20"
+      }
+    },
+    "params": null
+  }
+}
