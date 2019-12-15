@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-12-15T08:38:47.179750223Z",
+  "genesis_time": "2019-12-15T09:23:14.78015546Z",
   "chain_id": "qoschain-1",
   "consensus_params": {
     "block": {
@@ -18,6 +18,26 @@
   },
   "app_hash": "",
   "app_state": {
+    "stake": {
+      "gen_txs": null,
+      "params": {
+        "max_validator_cnt": "21",
+        "voting_status_len": "10000",
+        "voting_status_least": "7000",
+        "survival_secs": "28800",
+        "unbond_frozen_height": "259200",
+        "max_evidence_age": "1814400000000000",
+        "slash_fraction_double_sign": "0.200000000000000000",
+        "slash_fraction_downtime": "0.000100000000000000"
+      },
+      "validators": null,
+      "val_votes_info": null,
+      "val_votes_in_window": null,
+      "delegators_info": null,
+      "delegator_unbond_info": null,
+      "redelegations_info": null,
+      "current_validators": null
+    },
     "bank": {
       "accounts": [
         {
@@ -154,7 +174,7 @@
           "qscs": []
         },
         {
-          "account_address": "qosacc1xcax2phd6hqj443jxcvr2y0fh3hnl76lnxemm8",
+          "account_address": "qosacc1t7pdl38t0c6fp99nwpj5zy297zvnqpg7exm0s8",
           "public_key": "",
           "nonce": 0,
           "qos": "8333333333336",
@@ -162,7 +182,7 @@
         }
       ],
       "lock_info": {
-        "locked_account": "qosacc1xcax2phd6hqj443jxcvr2y0fh3hnl76lnxemm8",
+        "locked_account": "qosacc1t7pdl38t0c6fp99nwpj5zy297zvnqpg7exm0s8",
         "receiver": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
         "total_amount": "10000000000000",
         "released_amount": "1666666666664",
@@ -170,6 +190,67 @@
         "release_interval": "30",
         "release_times": "20"
       }
+    },
+    "approve": {
+      "approves": null
+    },
+    "guardian": {
+      "guardians": [
+        {
+          "description": "",
+          "guardian_type": 1,
+          "address": "qosacc1m5f6se6u2myrga7l3jhacy9hcnftszvgn0wqus",
+          "creator": ""
+        }
+      ]
+    },
+    "params": null,
+    "qcp": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
+      },
+      "qcps": null
+    },
+    "qsc": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
+      },
+      "qscs": null
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "params": {
+        "normal_min_deposit": "100000",
+        "normal_min_proposer_deposit_rate": "0.334000000000000000",
+        "normal_max_deposit_period": "604800000000000",
+        "normal_voting_period": "1209600000000000",
+        "normal_quorum": "0.334000000000000000",
+        "normal_threshold": "0.500000000000000000",
+        "normal_veto": "0.334000000000000000",
+        "normal_penalty": "0.000000000000000000",
+        "normal_burn_rate": "0.200000000000000000",
+        "important_min_deposit": "500000",
+        "important_min_proposer_deposit_rate": "0.334000000000000000",
+        "important_max_deposit_period": "604800000000000",
+        "important_voting_period": "1209600000000000",
+        "important_quorum": "0.334000000000000000",
+        "important_threshold": "0.500000000000000000",
+        "important_veto": "0.334000000000000000",
+        "important_penalty": "0.000000000000000000",
+        "important_burn_rate": "0.200000000000000000",
+        "critical_min_deposit": "1000000",
+        "critical_min_proposer_deposit_rate": "0.334000000000000000",
+        "critical_max_deposit_period": "604800000000000",
+        "critical_voting_period": "1209600000000000",
+        "critical_quorum": "0.334000000000000000",
+        "critical_threshold": "0.500000000000000000",
+        "critical_veto": "0.334000000000000000",
+        "critical_penalty": "0.000000000000000000",
+        "critical_burn_rate": "0.200000000000000000"
+      },
+      "proposals": null
     },
     "distribution": {
       "community_fee_pool": "0",
@@ -225,90 +306,9 @@
           "applied_amount": "0"
         }
       ],
-      "first_block_time": "1576399127",
+      "first_block_time": "1576401794",
       "applied_qos_amount": "47333333333336",
       "total_qos_amount": "98333333333336"
-    },
-    "stake": {
-      "gen_txs": null,
-      "params": {
-        "max_validator_cnt": "21",
-        "voting_status_len": "10000",
-        "voting_status_least": "7000",
-        "survival_secs": "28800",
-        "unbond_frozen_height": "259200",
-        "max_evidence_age": "1814400000000000",
-        "slash_fraction_double_sign": "0.200000000000000000",
-        "slash_fraction_downtime": "0.000100000000000000"
-      },
-      "validators": null,
-      "val_votes_info": null,
-      "val_votes_in_window": null,
-      "delegators_info": null,
-      "delegator_unbond_info": null,
-      "redelegations_info": null,
-      "current_validators": null
-    },
-    "params": null,
-    "qcp": {
-      "ca_root_pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
-      },
-      "qcps": null
-    },
-    "gov": {
-      "starting_proposal_id": "1",
-      "params": {
-        "normal_min_deposit": "100000",
-        "normal_min_proposer_deposit_rate": "0.334000000000000000",
-        "normal_max_deposit_period": "604800000000000",
-        "normal_voting_period": "1209600000000000",
-        "normal_quorum": "0.334000000000000000",
-        "normal_threshold": "0.500000000000000000",
-        "normal_veto": "0.334000000000000000",
-        "normal_penalty": "0.000000000000000000",
-        "normal_burn_rate": "0.200000000000000000",
-        "important_min_deposit": "500000",
-        "important_min_proposer_deposit_rate": "0.334000000000000000",
-        "important_max_deposit_period": "604800000000000",
-        "important_voting_period": "1209600000000000",
-        "important_quorum": "0.334000000000000000",
-        "important_threshold": "0.500000000000000000",
-        "important_veto": "0.334000000000000000",
-        "important_penalty": "0.000000000000000000",
-        "important_burn_rate": "0.200000000000000000",
-        "critical_min_deposit": "1000000",
-        "critical_min_proposer_deposit_rate": "0.334000000000000000",
-        "critical_max_deposit_period": "604800000000000",
-        "critical_voting_period": "1209600000000000",
-        "critical_quorum": "0.334000000000000000",
-        "critical_threshold": "0.500000000000000000",
-        "critical_veto": "0.334000000000000000",
-        "critical_penalty": "0.000000000000000000",
-        "critical_burn_rate": "0.200000000000000000"
-      },
-      "proposals": null
-    },
-    "guardian": {
-      "guardians": [
-        {
-          "description": "",
-          "guardian_type": 1,
-          "address": "qosacc1m5f6se6u2myrga7l3jhacy9hcnftszvgn0wqus",
-          "creator": ""
-        }
-      ]
-    },
-    "approve": {
-      "approves": null
-    },
-    "qsc": {
-      "ca_root_pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
-      },
-      "qscs": null
     }
   }
 }
