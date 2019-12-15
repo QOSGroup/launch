@@ -18,10 +18,11 @@ for v in validatorfile:
     v = v.replace("\\ ", "_")
     v = ' '.join(v.split())
     vv = v.split(" ")
-    if (len(vv)!=4 or string.index(vv[1], "qosacc") != 0 or len(vv[1]) != 45):
+    if (len(vv)!=5 or string.index(vv[1], "qosacc") != 0 or len(vv[1]) != 45 or not vv[2].isdigit() or string.index(vv[3], "http") < 0):
         print("validator format err: " + v)
         exit()
     validatorMap[vv[1]] = {}
+    #print(vv[1], vv[1], vv[2])
 print("%d validators find" % len(validatorMap.keys()))
 
 delegatorMap = {}
