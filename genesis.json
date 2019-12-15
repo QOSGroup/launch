@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-12-14T09:35:12.514174974Z",
+  "genesis_time": "2019-12-15T08:38:47.179750223Z",
   "chain_id": "qoschain-1",
   "consensus_params": {
     "block": {
@@ -18,828 +18,174 @@
   },
   "app_hash": "",
   "app_state": {
-    "gov": {
-      "starting_proposal_id": "1",
-      "params": {
-        "normal_min_deposit": "100000",
-        "normal_min_proposer_deposit_rate": "0.334000000000000000",
-        "normal_max_deposit_period": "604800000000000",
-        "normal_voting_period": "1209600000000000",
-        "normal_quorum": "0.334000000000000000",
-        "normal_threshold": "0.500000000000000000",
-        "normal_veto": "0.334000000000000000",
-        "normal_penalty": "0.000000000000000000",
-        "normal_burn_rate": "0.200000000000000000",
-        "important_min_deposit": "500000",
-        "important_min_proposer_deposit_rate": "0.334000000000000000",
-        "important_max_deposit_period": "604800000000000",
-        "important_voting_period": "1209600000000000",
-        "important_quorum": "0.334000000000000000",
-        "important_threshold": "0.500000000000000000",
-        "important_veto": "0.334000000000000000",
-        "important_penalty": "0.000000000000000000",
-        "important_burn_rate": "0.200000000000000000",
-        "critical_min_deposit": "1000000",
-        "critical_min_proposer_deposit_rate": "0.334000000000000000",
-        "critical_max_deposit_period": "604800000000000",
-        "critical_voting_period": "1209600000000000",
-        "critical_quorum": "0.334000000000000000",
-        "critical_threshold": "0.500000000000000000",
-        "critical_veto": "0.334000000000000000",
-        "critical_penalty": "0.000000000000000000",
-        "critical_burn_rate": "0.200000000000000000"
-      },
-      "proposals": null
-    },
-    "stake": {
-      "gen_txs": [
+    "bank": {
+      "accounts": [
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc14fr6cemgtcn47du46why3drayrzhme0ug8gcsa",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "d3kHPk/cjaKVpfxepQ7ngUAkQrPn4sQFuQ4wDipV46k="
-                },
-                "bond_tokens": "1",
-                "is_compound": true,
-                "description": {
-                  "moniker": "星红安",
-                  "logo": "http://validator-static.qoschain.info/public/logos/xha.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc14fr6cemgtcn47du46why3drayrzhme0ug8gcsa",
-                    "validator_addr": "qosval14fr6cemgtcn47du46why3drayrzhme0ushxmks",
-                    "delegate_amount": "1",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "WbZnq29+BoLncXLgQDfrqiSkWxcjTvGYmY9hZc2TrT8="
-              },
-              "signature": "NeXHazJ0tdqjY6JVxK3EnHwb4L4TpYJbds/8Bw3/XC4XOg8gQbrExdHIupegNk04LskZt6709F/w3uhF50brCQ==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc14fr6cemgtcn47du46why3drayrzhme0ug8gcsa",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1js5xkamjtpf5n2jhzf7wr858xftvyknsy8h8ah",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "GkzGgDOP3B52/u6f3O+UKzXZ4zRgHoUTg7ZmE7AH46k="
-                },
-                "bond_tokens": "2188918",
-                "is_compound": true,
-                "description": {
-                  "moniker": "德道资本",
-                  "logo": "validator-static.qoschain.info/public/logos/ddzb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1js5xkamjtpf5n2jhzf7wr858xftvyknsy8h8ah",
-                    "validator_addr": "qosval1js5xkamjtpf5n2jhzf7wr858xftvyknsuheym6",
-                    "delegate_amount": "2188918",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "8aKB8z6OyLu1g8oCPyYJ3ogygouDzjpmDoOr7u3ik6g="
-              },
-              "signature": "BjFIdHpWkBTFI2VD51jsGcaJB7Jz+JyFvthPG3P2KUKqcQpDeoM2OMvBXZhZyHn3le6XNF77rqUeDAd4K14EDQ==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc10padhk03ke48z2frahv6nj9ema0uuyjeeshugg",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "13000000",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1cp097ud079wdnhps9h4xpesxpegxepu74pa5wm",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "UEiiAXxWINncaQZ7QYJsjF/+MrfOmIkFVgjfmQIGW5s="
-                },
-                "bond_tokens": "1",
-                "is_compound": true,
-                "description": {
-                  "moniker": "航天正阳",
-                  "logo": "http://validator-static.qoschain.info/public/logos/htzy.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1cp097ud079wdnhps9h4xpesxpegxepu74pa5wm",
-                    "validator_addr": "qosval1cp097ud079wdnhps9h4xpesxpegxepu7d3nhgk",
-                    "delegate_amount": "1",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "pWOI1IEu61GBpQ6twgDffbLBOSblHwwPet6FdPTwmUI="
-              },
-              "signature": "Yrfz42Krj/E58gwvVkA9f+o8+NG6b0sbBaPwWHonNwr0Wwcg4LZ/l9YGEV5rAD0rwzwQjgHU/FOkqDEzzCbfAw==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1ykjvpj5ghv05nyf7dqlym5vdkkdlttzdf8advx",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "5200500",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc10dacuhypreyynjpjudjunk080jyvpa9mspqyxq",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "a5k9FXaTHnS6a1sfDpjojp5uVM1pWt8uQBG4M2eVrj0="
-                },
-                "bond_tokens": "1",
-                "is_compound": true,
-                "description": {
-                  "moniker": "缔联科技",
-                  "logo": "http://validator-static.qoschain.info/public/logos/dlkj.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc10dacuhypreyynjpjudjunk080jyvpa9mspqyxq",
-                    "validator_addr": "qosval10dacuhypreyynjpjudjunk080jyvpa9mg3w8qd",
-                    "delegate_amount": "1",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "/K25XAOW0OOkF8LQHbf1lgfslA9gTv0DtESqXQX/fcQ="
-              },
-              "signature": "TSo3T6OZ1KpU1EiLoTY/ttqrqo15k/MbBIre1Ojajy9kpT4Ifdq3ekYTkNdsp2/QZcc6fZJi8ZliJilVuBWSDA==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1menz4j7gccfdeufjmdxn9muq3gykhn9sa3fn36",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "18900000",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1hlwccn4v205hjgc43erxnlrycu77rp7fsnyrw6",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "RDO/eBtQJXRh791phGfnfsjB4fPnmLgTWpyh4uD2YN4="
-                },
-                "bond_tokens": "1",
-                "is_compound": true,
-                "description": {
-                  "moniker": "锐格钱包",
-                  "logo": "http://validator-static.qoschain.info/public/logos/rgqb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1hlwccn4v205hjgc43erxnlrycu77rp7fsnyrw6",
-                    "validator_addr": "qosval1hlwccn4v205hjgc43erxnlrycu77rp7fgr2qgh",
-                    "delegate_amount": "1",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "tR5UeSr3UUIAsyCcpkP470G6oPQQelkd/TZDy2uCQBI="
-              },
-              "signature": "bF9G0iBa7c+p1cAbtNwMNsn1M7I1vus4YK4IQfkn1o1DZHvpBkFg7c+k9/zbhWTZdtxbqW2ligD1KIyirxP4Cw==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1cg0gtkk2e5656hzwhw8ahlemzz3rnxwja30dqa",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1sv3ptuxtzjrqrwryu43jfqyxgrxxfkvhkttdyx",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "79625m1u451gxjV2p5asqBB7MotwDI+r56W8zqgwiTs="
-                },
-                "bond_tokens": "4839191",
-                "is_compound": true,
-                "description": {
-                  "moniker": "传奇资本",
-                  "logo": "http://validator-static.qoschain.info/public/logos/cqzb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1sv3ptuxtzjrqrwryu43jfqyxgrxxfkvhkttdyx",
-                    "validator_addr": "qosval1sv3ptuxtzjrqrwryu43jfqyxgrxxfkvhwm9wzt",
-                    "delegate_amount": "4839191",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "zASPkbt/R3ued26x0sXSH0OQzv0n8gmQQgrqL9WMuSc="
-              },
-              "signature": "ix98H50tG95f5c8+G3jksPAmRQjgQpVwEriGxAZd6XEES+fCmRmQTH7XWqCOld2rGHVsmOP6sN/JzLvCMIiPBA==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1666666666664",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1ufkcp4la834x9cwwc2q448ma0jh8c2nzaqejg6",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "H2qniaXILHrGNetXtmtm/7pUZS9nloFsZe1d0y5dKuM="
-                },
-                "bond_tokens": "3769738",
-                "is_compound": true,
-                "description": {
-                  "moniker": "币胜资本",
-                  "logo": "http://validator-static.qoschain.info/public/logos/bszb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1ufkcp4la834x9cwwc2q448ma0jh8c2nzaqejg6",
-                    "validator_addr": "qosval1ufkcp4la834x9cwwc2q448ma0jh8c2nz9sh3wh",
-                    "delegate_amount": "3769738",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "7JSozASpRh8sA+/H4TpEzq/58uND9OP22VVYQLYVcPU="
-              },
-              "signature": "EphDl+qS03wi2Xurpd7sJIh0/WQgUDIToltSqXfr1AAlfBjvqVxDNo/YMX3B0JUXT9iN0r3Bx/7rz0dTgjZzDg==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1sv3ptuxtzjrqrwryu43jfqyxgrxxfkvhkttdyx",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "4839191",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc10padhk03ke48z2frahv6nj9ema0uuyjeeshugg",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "CLGZzGozP202uOPLFVigfKHGHB+OC+zaqVKXRa0/9tE="
-                },
-                "bond_tokens": "13000000",
-                "is_compound": true,
-                "description": {
-                  "moniker": "QOSBBB",
-                  "logo": "http://validator-static.qoschain.info/public/logos/qosbbb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc10padhk03ke48z2frahv6nj9ema0uuyjeeshugg",
-                    "validator_addr": "qosval10padhk03ke48z2frahv6nj9ema0uuyjepqelw9",
-                    "delegate_amount": "13000000",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "WlwuQn9oStjDpUY+gquGfqn0izLEsfcyCDUdZt0nlPw="
-              },
-              "signature": "aGt2hMOeTpKVT+IKrE+hijA8wFOE8OLMHr2V0xyDdxppLt/Gy/XpcF62z4WpExit0xlXSNT2xoPCqBrc2K+4DQ==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1cp097ud079wdnhps9h4xpesxpegxepu74pa5wm",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc102nhm8dt69p2jynnx5w6kvxepyeu63sm3qtfd8",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "6bfE3oGIE2UENlEIrAVyWYes1r+l+Q3mgA+fYiWEcQk="
-                },
-                "bond_tokens": "3769738",
-                "is_compound": true,
-                "description": {
-                  "moniker": "翼圣资本",
-                  "logo": "http://validator-static.qoschain.info/public/logos/yszb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc102nhm8dt69p2jynnx5w6kvxepyeu63sm3qtfd8",
-                    "validator_addr": "qosval102nhm8dt69p2jynnx5w6kvxepyeu63smfs92t2",
-                    "delegate_amount": "3769738",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "/uB2QagRmXyLaCjgzinDfdgtPJWvQqoK0FQItDen3pc="
-              },
-              "signature": "fiMSZrYzNHJSz1V48rGynvQxFTnlafqU7m2bN+IMJ+YRRhsvgVZuoBbGd4P1owUzDb8K6jkw9hvhKqem01+FDw==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1ug79m5a9d80zuhp5q88k8vtjc7fqwn522ch5tf",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "15244",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1gv80dft8wfqa6jsu83mlftl0p8xcthsgmjmglz",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "kROO/CeWGGD/9X3R67IYDMMnJ0Yavkfv1OaWPPA4HFc="
-                },
-                "bond_tokens": "8000000",
-                "is_compound": true,
-                "description": {
-                  "moniker": "花花节点联盟",
-                  "logo": "http://validator-static.qoschain.info/public/logos/hhjdlm.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1gv80dft8wfqa6jsu83mlftl0p8xcthsgmjmglz",
-                    "validator_addr": "qosval1gv80dft8wfqa6jsu83mlftl0p8xcthsgrz4te0",
-                    "delegate_amount": "8000000",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "D+j5xV4hYgTPB1+nghAkpwnxKTF7ubRHeL31FUBJ0c0="
-              },
-              "signature": "g6+epKsTo74iuwsbRaX/16yAt2Z5EeSm8HkEmbE2ocpau5Cq0HaojYdZk7V4IA4Zlo1irdcgZMadr7qdUUY+CA==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc149n3dksw9rxkz4revua75a6n4r3echz46l342e",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "2192520",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1cg0gtkk2e5656hzwhw8ahlemzz3rnxwja30dqa",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "Qn0h03ybuDf2O52IhFoK2eR/iYl6Lo1T5OJ/A44hu1o="
-                },
-                "bond_tokens": "1",
-                "is_compound": true,
-                "description": {
-                  "moniker": "QOSV21",
-                  "logo": "http://validator-static.qoschain.info/public/logos/qosv21.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1cg0gtkk2e5656hzwhw8ahlemzz3rnxwja30dqa",
-                    "validator_addr": "qosval1cg0gtkk2e5656hzwhw8ahlemzz3rnxwj9ppwxs",
-                    "delegate_amount": "1",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "0Lex44pyTyUa+zB2Klv4LvtonACkcoaZrXyCUbjIqKw="
-              },
-              "signature": "/iT5B3DNUKbZC28d83ituBf6l6uSSo6HoO6PlDU+AAZUCQ7G/CLjEAU8D19xvLOSK9eEnTVrkIJqHWbuIeQaAA==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1gv80dft8wfqa6jsu83mlftl0p8xcthsgmjmglz",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "8000000",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc149n3dksw9rxkz4revua75a6n4r3echz46l342e",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "8nn5h8PY1jyze9m3BZr8ZAv+O66l0wc/lTzsZ7qkMdc="
-                },
-                "bond_tokens": "2192520",
-                "is_compound": true,
-                "description": {
-                  "moniker": "颐和资本",
-                  "logo": "http://validator-static.qoschain.info/public/logos/yhzb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc149n3dksw9rxkz4revua75a6n4r3echz46l342e",
-                    "validator_addr": "qosval149n3dksw9rxkz4revua75a6n4r3echz4z0lkv5",
-                    "delegate_amount": "2192520",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "ma6OlYuNrmzTxlP23qf59gZG2e7mYAr5WkgZ/Caz2FI="
-              },
-              "signature": "ceNk/IUQEftX/lry97LcLJnPziWlDQukDKeTWa8dABKTCWHrbShbHXf2tG6ziQY6rwNKorSRYnlpD1hnAVk+DA==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1js5xkamjtpf5n2jhzf7wr858xftvyknsy8h8ah",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "2188918",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1v0qdkc5de3x8vnjz4mxja4cmczw0zefuehs3f5",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "1Ex2eG3pohIYHcPILc/hXG8W0q1Gdrz8+Be6c5qALRg="
-                },
-                "bond_tokens": "1",
-                "is_compound": true,
-                "description": {
-                  "moniker": "仁和资本",
-                  "logo": "http://validator-static.qoschain.info/public/logos/rhzb.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1v0qdkc5de3x8vnjz4mxja4cmczw0zefuehs3f5",
-                    "validator_addr": "qosval1v0qdkc5de3x8vnjz4mxja4cmczw0zefup87j0e",
-                    "delegate_amount": "1",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "AUx/orWmDNpZAZIZd9hc1k4z0bf23ev3Z+TUVpgz54k="
-              },
-              "signature": "U6zA4gb7KbqywBVJ+R+0pSKQKVQbrwaWRgxBpSkHxL1jo1UuIKxHW5bjSPgpYbP/Jj6Gk8+VlbAi6u8mYJTZCQ==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc102nhm8dt69p2jynnx5w6kvxepyeu63sm3qtfd8",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "3769738",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1ykjvpj5ghv05nyf7dqlym5vdkkdlttzdf8advx",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "HxlP0/gHgnqHb3XOrE25c4WYlgPSYo2Id4AbhImpuNg="
-                },
-                "bond_tokens": "5200500",
-                "is_compound": true,
-                "description": {
-                  "moniker": "澄梓创投",
-                  "logo": "http://validator-static.qoschain.info/public/logos/czct.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1ykjvpj5ghv05nyf7dqlym5vdkkdlttzdf8advx",
-                    "validator_addr": "qosval1ykjvpj5ghv05nyf7dqlym5vdkkdlttzd3hnw2t",
-                    "delegate_amount": "5200500",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "fWjyKFx6w2Q9FfbPcsJHz0jz9EQwmHdyXmF2ArRJzkQ="
-              },
-              "signature": "RFr3SRDwK+DQqMX/WxGCVAF1V14yC1YXljvsPGvanXH6cmhcj0sappKGOEqKoVwoDEI2cJkWoHyGCVTqyMt9Dw==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc10dacuhypreyynjpjudjunk080jyvpa9mspqyxq",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1ug79m5a9d80zuhp5q88k8vtjc7fqwn522ch5tf",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "7b5/tzdka/ma658FaJrI0r18qQukDbWX+IFGH3JcUWQ="
-                },
-                "bond_tokens": "15244",
-                "is_compound": true,
-                "description": {
-                  "moniker": "Qwin Wallet",
-                  "logo": "http://validator-static.qoschain.info/public/logos/qwinwallet.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1ug79m5a9d80zuhp5q88k8vtjc7fqwn522ch5tf",
-                    "validator_addr": "qosval1ug79m5a9d80zuhp5q88k8vtjc7fqwn52jgehdy",
-                    "delegate_amount": "15244",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "/kdXo4ZemSTIF6VAB4J4pb0FBQEtyfM88KN7CB2pTzs="
-              },
-              "signature": "cs26Mi8fQHEwu+KQ9ztv1jC/lEjLhf6Ax8+9y5zpY7+uRgARfGuMk3t8E0G3CuyVoDyj84+7fhLdxHpOCSb8BQ==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1ufkcp4la834x9cwwc2q448ma0jh8c2nzaqejg6",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "3769738",
+          "qscs": []
         },
         {
-          "itx": [
-            {
-              "type": "stake/txs/TxCreateValidator",
-              "value": {
-                "owner": "qosacc1menz4j7gccfdeufjmdxn9muq3gykhn9sa3fn36",
-                "cons_pub_key": {
-                  "type": "tendermint/PubKeyEd25519",
-                  "value": "ILZLYsM7kRln1VK3ZEKcXYRfq0Mll+gA8rYaPomVq0g="
-                },
-                "bond_tokens": "18900000",
-                "is_compound": true,
-                "description": {
-                  "moniker": "X Token",
-                  "logo": "http://validator-static.qoschain.info/public/logos/xtoken.png",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "delegations": [
-                  {
-                    "delegator_addr": "qosacc1menz4j7gccfdeufjmdxn9muq3gykhn9sa3fn36",
-                    "validator_addr": "qosval1menz4j7gccfdeufjmdxn9muq3gykhn9s9p8shh",
-                    "delegate_amount": "18900000",
-                    "is_compound": true
-                  }
-                ]
-              }
-            }
-          ],
-          "sigature": [
-            {
-              "pubkey": {
-                "type": "tendermint/PubKeyEd25519",
-                "value": "wUKvrWoGk94g8C6y8xyo7jQTBJc9ia3Vrz3NLEfUUKw="
-              },
-              "signature": "cpQI4qZySOh844GDB/TcYAGgnf5GR4BG4cJISd0XGsd4z7C0j2Zv1AaJWWt61hB/Tnfs2kJNQszsqz0B5KCDAQ==",
-              "nonce": "1"
-            }
-          ],
-          "chainid": "qoschain-1",
-          "maxgas": "1000000"
+          "account_address": "qosacc1xgdpkgax4gtkfv9kqdmasfmyux69736urqvlwe",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "14698600",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1v0qdkc5de3x8vnjz4mxja4cmczw0zefuehs3f5",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1hlwccn4v205hjgc43erxnlrycu77rp7fsnyrw6",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "1",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1lkc3qrktxxmhslpyatcznwuq8yaqrg2agngm5z",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "37333256758881",
+          "qscs": []
+        },
+        {
+          "account_address": "qosacc1xcax2phd6hqj443jxcvr2y0fh3hnl76lnxemm8",
+          "public_key": "",
+          "nonce": 0,
+          "qos": "8333333333336",
+          "qscs": null
         }
       ],
+      "lock_info": {
+        "locked_account": "qosacc1xcax2phd6hqj443jxcvr2y0fh3hnl76lnxemm8",
+        "receiver": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
+        "total_amount": "10000000000000",
+        "released_amount": "1666666666664",
+        "release_time": "2019-12-16T00:00:00Z",
+        "release_interval": "30",
+        "release_times": "20"
+      }
+    },
+    "distribution": {
+      "community_fee_pool": "0",
+      "last_block_proposer": "",
+      "pre_distribute_amount": "0",
+      "validators_history_period": null,
+      "validators_current_period": null,
+      "delegator_earning_info": null,
+      "delegator_income_height": null,
+      "validator_eco_fee_pools": null,
       "params": {
-        "max_validator_cnt": "21",
-        "voting_status_len": "10000",
-        "voting_status_least": "7000",
-        "survival_secs": "28800",
-        "unbond_frozen_height": "259200",
-        "max_evidence_age": "1814400000000000",
-        "slash_fraction_double_sign": "0.200000000000000000",
-        "slash_fraction_downtime": "0.000100000000000000"
-      },
-      "validators": null,
-      "val_votes_info": null,
-      "val_votes_in_window": null,
-      "delegators_info": null,
-      "delegator_unbond_info": null,
-      "redelegations_info": null,
-      "current_validators": null
-    },
-    "qsc": {
-      "ca_root_pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
-      },
-      "qscs": null
-    },
-    "approve": {
-      "approves": null
-    },
-    "qcp": {
-      "ca_root_pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
-      },
-      "qcps": null
+        "proposer_reward_rate": "0.010000000000000000",
+        "community_reward_rate": "0.020000000000000000",
+        "delegator_income_period_height": "720",
+        "gas_per_unit_cost": "100"
+      }
     },
     "mint": {
       "inflation_phrases": [
@@ -879,185 +225,71 @@
           "applied_amount": "0"
         }
       ],
-      "first_block_time": "1576316112",
-      "applied_qos_amount": "10000123776522",
-      "total_qos_amount": "61000123776522"
+      "first_block_time": "1576399127",
+      "applied_qos_amount": "47333333333336",
+      "total_qos_amount": "98333333333336"
     },
-    "bank": {
-      "accounts": [
-        {
-          "account_address": "qosacc1hlwccn4v205hjgc43erxnlrycu77rp7fsnyrw6",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "1",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1mhdphazuaq54kwmftl5630acek8qyuwk5ezvgg",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "20000000",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1cg0gtkk2e5656hzwhw8ahlemzz3rnxwja30dqa",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "1",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc149n3dksw9rxkz4revua75a6n4r3echz46l342e",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "2192520",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc102nhm8dt69p2jynnx5w6kvxepyeu63sm3qtfd8",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "3769738",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc14fr6cemgtcn47du46why3drayrzhme0ug8gcsa",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "1",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc10padhk03ke48z2frahv6nj9ema0uuyjeeshugg",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "13000000",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1menz4j7gccfdeufjmdxn9muq3gykhn9sa3fn36",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "18900000",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1gv80dft8wfqa6jsu83mlftl0p8xcthsgmjmglz",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "8000000",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1cp097ud079wdnhps9h4xpesxpegxepu74pa5wm",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "1",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1js5xkamjtpf5n2jhzf7wr858xftvyknsy8h8ah",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "2188918",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1v0qdkc5de3x8vnjz4mxja4cmczw0zefuehs3f5",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "1",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1j33hgenprh6u30npt8449yxm0fv0lcn6d0drz8",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "9256382",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1ykjvpj5ghv05nyf7dqlym5vdkkdlttzdf8advx",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "5200500",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc10dacuhypreyynjpjudjunk080jyvpa9mspqyxq",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "1",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1ug79m5a9d80zuhp5q88k8vtjc7fqwn522ch5tf",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "15244",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1xgdpkgax4gtkfv9kqdmasfmyux69736urqvlwe",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "14698600",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1sv3ptuxtzjrqrwryu43jfqyxgrxxfkvhkttdyx",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "4839191",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1qgt4n09hlfl4346caw7jj5m6kl5hcpm97knrgh",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "14908709",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1ufkcp4la834x9cwwc2q448ma0jh8c2nzaqejg6",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "3769738",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc18j2s8gazfvtgvmjh6r8txd6yrret0qy6303tpm",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "3036976",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "1666666666664",
-          "qscs": []
-        },
-        {
-          "account_address": "qosacc1ryny4s97gjs6zr9elx5c4z9dg5pv77extf2x4w",
-          "public_key": "",
-          "nonce": 0,
-          "qos": "8333333333336",
-          "qscs": null
-        }
-      ],
-      "lock_info": {
-        "locked_account": "qosacc1ryny4s97gjs6zr9elx5c4z9dg5pv77extf2x4w",
-        "receiver": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
-        "total_amount": "10000000000000",
-        "released_amount": "1666666666664",
-        "release_time": "2019-12-16T00:00:00Z",
-        "release_interval": "30",
-        "release_times": "20"
-      }
+    "stake": {
+      "gen_txs": null,
+      "params": {
+        "max_validator_cnt": "21",
+        "voting_status_len": "10000",
+        "voting_status_least": "7000",
+        "survival_secs": "28800",
+        "unbond_frozen_height": "259200",
+        "max_evidence_age": "1814400000000000",
+        "slash_fraction_double_sign": "0.200000000000000000",
+        "slash_fraction_downtime": "0.000100000000000000"
+      },
+      "validators": null,
+      "val_votes_info": null,
+      "val_votes_in_window": null,
+      "delegators_info": null,
+      "delegator_unbond_info": null,
+      "redelegations_info": null,
+      "current_validators": null
     },
     "params": null,
+    "qcp": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
+      },
+      "qcps": null
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "params": {
+        "normal_min_deposit": "100000",
+        "normal_min_proposer_deposit_rate": "0.334000000000000000",
+        "normal_max_deposit_period": "604800000000000",
+        "normal_voting_period": "1209600000000000",
+        "normal_quorum": "0.334000000000000000",
+        "normal_threshold": "0.500000000000000000",
+        "normal_veto": "0.334000000000000000",
+        "normal_penalty": "0.000000000000000000",
+        "normal_burn_rate": "0.200000000000000000",
+        "important_min_deposit": "500000",
+        "important_min_proposer_deposit_rate": "0.334000000000000000",
+        "important_max_deposit_period": "604800000000000",
+        "important_voting_period": "1209600000000000",
+        "important_quorum": "0.334000000000000000",
+        "important_threshold": "0.500000000000000000",
+        "important_veto": "0.334000000000000000",
+        "important_penalty": "0.000000000000000000",
+        "important_burn_rate": "0.200000000000000000",
+        "critical_min_deposit": "1000000",
+        "critical_min_proposer_deposit_rate": "0.334000000000000000",
+        "critical_max_deposit_period": "604800000000000",
+        "critical_voting_period": "1209600000000000",
+        "critical_quorum": "0.334000000000000000",
+        "critical_threshold": "0.500000000000000000",
+        "critical_veto": "0.334000000000000000",
+        "critical_penalty": "0.000000000000000000",
+        "critical_burn_rate": "0.200000000000000000"
+      },
+      "proposals": null
+    },
     "guardian": {
       "guardians": [
         {
@@ -1068,21 +300,15 @@
         }
       ]
     },
-    "distribution": {
-      "community_fee_pool": "0",
-      "last_block_proposer": "",
-      "pre_distribute_amount": "0",
-      "validators_history_period": null,
-      "validators_current_period": null,
-      "delegator_earning_info": null,
-      "delegator_income_height": null,
-      "validator_eco_fee_pools": null,
-      "params": {
-        "proposer_reward_rate": "0.010000000000000000",
-        "community_reward_rate": "0.020000000000000000",
-        "delegator_income_period_height": "720",
-        "gas_per_unit_cost": "100"
-      }
+    "approve": {
+      "approves": null
+    },
+    "qsc": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
+      },
+      "qscs": null
     }
   }
 }
