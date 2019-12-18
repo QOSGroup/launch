@@ -2,6 +2,9 @@
 # -- coding: utf-8 --
 import os
 import string
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 cwd = os.getcwd()
 
@@ -10,6 +13,7 @@ ACCOUNT_FILE = "accounts.txt"
 DELEGATOR_FILE = "delegations.txt"
 
 validatorMap = {}
+validatorInfo = {}
 validatorfile = open(cwd + "/" + VALIDATOR_FILE,"r")
 for v in validatorfile:
     v = v.strip()
@@ -22,6 +26,7 @@ for v in validatorfile:
         print("validator format err: " + v)
         exit()
     validatorMap[vv[1]] = {}
+    validatorInfo[vv[1]] = vv[0]
     #print(vv[1], vv[1], vv[2])
 print("%d validators find" % len(validatorMap.keys()))
 
@@ -46,6 +51,7 @@ for d in delegatorfile:
     if dd[1] not in validatorMap[dd[0]].keys():
         validatorMap[dd[0]][dd[1]] = 0
     else:
+        #validatorMap[dd[0]][dd[1]] += dd[2]
         print("duplicated validator-delegator pair found, you may need to check: " + d)
     validatorMap[dd[0]][dd[1]] += int(dd[2])
 
@@ -77,3 +83,15 @@ account_ori.write("qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey 2083333333330\n
 # reserve account, where all unclaimed qos goes
 account_ori.write("qosacc1lkc3qrktxxmhslpyatcznwuq8yaqrg2agngm5z %d" % totalsupply)
 account_ori.close()
+
+delegations_merged = open(cwd + "/delegations_merged.txt", 'w')
+for val in validatorMap.keys():
+    if val not in validatorInfo.keys():
+        print("can't find validator ", val)
+        exit()
+    deltotal = 0
+    for dele in validatorMap[val].keys():
+        deltotal += validatorMap[val][dele]
+        delegations_merged.write("%s %s %d" % (val, dele, validatorMap[val][dele]))
+    print("%s: %d" % (validatorInfo[val], deltotal/10000))
+delegations_merged.close()
