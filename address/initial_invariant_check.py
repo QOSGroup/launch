@@ -67,12 +67,13 @@ for d in accountfile:
     delegatorMap[dd[0]][1] = int(dd[1])
 
 account_ori = open(cwd + "/account_before_delegation.txt", 'w')
-# team account
-delegatorMap["qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey"] = [0, 1666666666664]
+# 10000000000000 frozen qos for the team
 totalsupply = 49000000000000 - 10000000000000
 for acc in delegatorMap.keys():
     account_ori.write("%s %d\n" % (acc, delegatorMap[acc][0] + delegatorMap[acc][1]))
     totalsupply -= (delegatorMap[acc][0] + delegatorMap[acc][1])
-# reserve account
+# team account already received 5 months' fund since 201908
+account_ori.write("qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey 2083333333330\n")
+# reserve account, where all unclaimed qos goes
 account_ori.write("qosacc1lkc3qrktxxmhslpyatcznwuq8yaqrg2agngm5z %d" % totalsupply)
 account_ori.close()
