@@ -92,6 +92,6 @@ for val in validatorMap.keys():
     deltotal = 0
     for dele in validatorMap[val].keys():
         deltotal += validatorMap[val][dele]
-        delegations_merged.write("%s %s %d" % (val, dele, validatorMap[val][dele]))
+        delegations_merged.write("%s %s %d\n" % (val, dele, validatorMap[val][dele]))
     print("%s: %d" % (validatorInfo[val], deltotal/10000))
 delegations_merged.close()
