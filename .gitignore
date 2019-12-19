@@ -2,3 +2,4 @@
 gen.sh
 go.mod
 main.go
+go.sum

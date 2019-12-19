@@ -1,0 +1,35 @@
+#!/bin/bash
+qosd gentx --compound \
+--moniker "澄梓创投" \
+--owner "qosacc1ufnx50p0eacnetsvasxa22t4uhef6e42c8q7z5" \
+--tokens "326075270000" \
+--website "" \
+--logo "http://validator-static.qoschain.info/public/logos/czct.png" \
+--delegations "\
+qosacc14h7xz0cp42alkpvgr0n45hrvaauvru6l3wahrl,888880000qos;\
+qosacc1jje09wu5yj2m7j770w95rz6z4009f02dzlmys3,888880000qos;\
+qosacc1u77khstw2l50vtqp52c9q5eg7ncfy8da2qz9ln,2352370000qos;\
+qosacc1uevyxzam0q02ttg2f6xyue2dpte58y95tnwgzy,7483400000qos;\
+qosacc19sca2mqnrla92repmq2qeul8t5555vll40r7ly,358000000qos;\
+qosacc1mevnvexmrvpkuhygunrx3h7mf9xgcuklpzg0pf,20881600000qos;\
+qosacc1cpld4rw3umhd4n5exk3gmrhrxal07zxw3fewql,1000000000qos;\
+qosacc19yx58gc7pgs8y4xqyf7p8sv22gj5dr7ed8r6rd,10009000000qos;\
+qosacc14ag0sr052vazz0sspxgna7gecfeylx6qm4qae8,3700000000qos;\
+qosacc1u4h6ahu4fv6yn0p2fkcs7lpcwa5f9vckyq9adx,3552840000qos;\
+qosacc1huzry0xz8zdxx3qkqy7znvftsz0jxyumr4q5ht,8600000000qos;\
+qosacc1llhp97lrsdkscunavgtzpakhkyjey5vxuxuctx,1530440000qos;\
+qosacc1ufnx50p0eacnetsvasxa22t4uhef6e42c8q7z5,52005000000qos;\
+qosacc13dz8v47lg66pvqzwt9wyvuvlugnahcejnsacja,2434140000qos;\
+qosacc15wpww86n4s9fr7a87eg7nzuapqa9e8q57kq82j,156580000qos;\
+qosacc1jwh2hauy6vrw808v35xhsklsdwc23l52940hm9,20274690000qos;\
+qosacc1rdmj9fy3v9kpw7xquru58q8nque4wepgrxrztv,1507000000qos;\
+qosacc1flgn8w85shql5aqv3n09qrlz4avy2yat6fhwtm,621080000qos;\
+qosacc1m7dx5a89fcvgh8fg9jlazy42rjcupt6qvz8ns3,10000000qos;\
+qosacc1sa6rzvefw2ra8cut798zj6whxncqc5klpa33z8,10778250000qos;\
+qosacc19kslrz2xxvk8j9r4musqgjx88ukzr53lj2xvex,168855240000qos;\
+qosacc15ntka2f9tneyfdrd4v2dndaj3nsanu7nv3uvr2,1000000000qos;\
+qosacc1knylz0dgzj4d0ynvwj8yw9fv9mlrcudg0nrllc,5000000000qos;\
+qosacc1hmtc029hgwh00jwv8c997397aal2ad6s2gcyvw,1299000000qos;\
+qosacc1ckvygvtqgl4866war3pp78jn22ecftt5cl3yg7,888880000qos\
+" 
+

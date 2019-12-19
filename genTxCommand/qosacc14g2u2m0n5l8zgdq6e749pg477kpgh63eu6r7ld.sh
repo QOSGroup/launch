@@ -1,0 +1,41 @@
+#!/bin/bash
+qosd gentx --compound \
+--moniker "颐和资本" \
+--owner "qosacc14g2u2m0n5l8zgdq6e749pg477kpgh63eu6r7ld" \
+--tokens "683667030000" \
+--website "" \
+--logo "http://validator-static.qoschain.info/public/logos/yhzb.png" \
+--delegations "\
+qosacc1m9rd5tjy6p2phq4wd3834ewc6rmm5dxsyua4jv,14000000000qos;\
+qosacc1u4qt6tylmfmqzj3y06rtsrrkw9ql0k7e86yzwz,15000000000qos;\
+qosacc1z4kas9kykta8lflmn2zy6hq7kzalrf7jdpxs7r,10000000000qos;\
+qosacc17786jgsxh3hvt3whuce670s82ezyusdsmk27v8,60000000000qos;\
+qosacc1zfttmvr7pjv4cx5vvxrfqjar6fs6d68a28wlt2,30000000000qos;\
+qosacc1fpzcep5q0fzqhd3l3yhz0lstut6967e5kpwdk7,19999990000qos;\
+qosacc1dddcvg9l5yjhyzhalzj89zl9f0tag4dx24acuu,10340000000qos;\
+qosacc1qc5q7p3mrykl7guavht4pq4ae86uhs2xyvckq2,10000000000qos;\
+qosacc10mdsap4h7etejf78q85m40fppm90lxhrfa039u,10000000000qos;\
+qosacc1jrzdlj6dtka4mr837e52jn73erf4pp3yhdlhax,20000000000qos;\
+qosacc1j25ekxcrljj844f5prhk2u4c4u8g2cwszlf7nv,4540000000qos;\
+qosacc1g5rlwtv2e7n5va59x48jmf5cgxvrccqsfe4jx0,80000000000qos;\
+qosacc1fr2j47424g7nqqzjv4sck8dukr4zs9y94uuurt,20000000000qos;\
+qosacc1f9d30pwmmsxtud7lrvu85qgfg4e63rm664xgns,53590000000qos;\
+qosacc15sdutz5c6g6lm83pucvdx5tzm32qal4chcy8ns,5600000000qos;\
+qosacc1rpna8ngw9s0qdas5j7ee6cxf3mfnenx6a3a5u2,2200000000qos;\
+qosacc14g2u2m0n5l8zgdq6e749pg477kpgh63eu6r7ld,21925200000qos;\
+qosacc1v89x4zgjj3j8xtnewe2f83hjynxjlen5ekms5s,26300000000qos;\
+qosacc1pfc9a2kqwx692y80ntqd2xs3jtmzwgfhnnyefj,7500000000qos;\
+qosacc1t04g8vnuhxccy2ynscdp0zv47qcfs2wr48g5zq,11000000000qos;\
+qosacc1flvywwhqe2gsl7f7357w0870gthl3tutckz4dd,900000000qos;\
+qosacc153qjw7uhmxl2q5259thuyncx0pr5pv8ryd8fve,2000000000qos;\
+qosacc1h9c7nndqacle04yc3g65n2agylnypg28smgs9s,690000000qos;\
+qosacc1knylz0dgzj4d0ynvwj8yw9fv9mlrcudg0nrllc,20000000000qos;\
+qosacc1023fucqqgchvxlgvqv2vk4jg6u68zllfvsnhsd,28181840000qos;\
+qosacc173jll7mamc6h0z02d2zuafkdar8alsvkksahpj,2000000000qos;\
+qosacc1dnm4j86stwknjyl85qdzd2qqum6x9jalaahcct,30000000000qos;\
+qosacc1wu0r5r6zhhaznkfv9esecr2x7rd8qnm9tg5crq,6300000000qos;\
+qosacc1wd2f9fz62wkwaq5ypmryxn7upqsntcnx3en3sf,50000000000qos;\
+qosacc1tpcu8ux6g43gafzz0h2cews8exn3x7x53y2k50,110000000000qos;\
+qosacc18ajqlln6ejclydz7299c5xxwxcdmhaw7nam2zj,1600000000qos\
+" 
+
