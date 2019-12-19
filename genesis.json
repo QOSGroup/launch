@@ -18,13 +18,6 @@
   },
   "app_hash": "",
   "app_state": {
-    "qcp": {
-      "ca_root_pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
-      },
-      "qcps": null
-    },
     "gov": {
       "starting_proposal_id": "1",
       "params": {
@@ -58,28 +51,36 @@
       },
       "proposals": null
     },
-    "stake": {
-      "gen_txs": null,
+    "distribution": {
+      "community_fee_pool": "0",
+      "last_block_proposer": "",
+      "pre_distribute_amount": "0",
+      "validators_history_period": null,
+      "validators_current_period": null,
+      "delegator_earning_info": null,
+      "delegator_income_height": null,
+      "validator_eco_fee_pools": null,
       "params": {
-        "max_validator_cnt": "21",
-        "voting_status_len": "10000",
-        "voting_status_least": "7000",
-        "survival_secs": "28800",
-        "unbond_frozen_height": "259200",
-        "max_evidence_age": "1814400000000000",
-        "slash_fraction_double_sign": "0.200000000000000000",
-        "slash_fraction_downtime": "0.000100000000000000"
-      },
-      "validators": null,
-      "val_votes_info": null,
-      "val_votes_in_window": null,
-      "delegators_info": null,
-      "delegator_unbond_info": null,
-      "redelegations_info": null,
-      "current_validators": null
+        "proposer_reward_rate": "0.010000000000000000",
+        "community_reward_rate": "0.020000000000000000",
+        "delegator_income_period_height": "720",
+        "gas_per_unit_cost": "100"
+      }
     },
-    "approve": {
-      "approves": null
+    "qsc": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
+      },
+      "qscs": null
+    },
+    "params": null,
+    "qcp": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
+      },
+      "qcps": null
     },
     "guardian": {
       "guardians": [
@@ -3100,23 +3101,6 @@
         "release_times": "19"
       }
     },
-    "distribution": {
-      "community_fee_pool": "0",
-      "last_block_proposer": "",
-      "pre_distribute_amount": "0",
-      "validators_history_period": null,
-      "validators_current_period": null,
-      "delegator_earning_info": null,
-      "delegator_income_height": null,
-      "validator_eco_fee_pools": null,
-      "params": {
-        "proposer_reward_rate": "0.010000000000000000",
-        "community_reward_rate": "0.020000000000000000",
-        "delegator_income_period_height": "720",
-        "gas_per_unit_cost": "100"
-      }
-    },
-    "params": null,
     "mint": {
       "inflation_phrases": [
         {
@@ -3159,12 +3143,3462 @@
       "applied_qos_amount": "49000000000000",
       "total_qos_amount": "100000000000000"
     },
-    "qsc": {
-      "ca_root_pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
+    "stake": {
+      "gen_txs": [
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc18wxnuazav0tkzjk22jtpw5swv7sfrw5h9f29pt",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "7flYq9yTrweVbeU2V5ohXamHRfn3cmoOP2Oexs3C7eA="
+                },
+                "bond_tokens": "1339220840000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "QOSBBB",
+                  "logo": "http://validator-static.qoschain.info/public/logos/qosbbb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1kg33xa8qsmrvswsjnkmyslefukjv9pfhamqylm",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "3863250000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1f884n0knu8gh3shkcf3v5szuu53xrw3c0mug8q",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "12000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1tykf7f0fsqexyqxtgl40nrce53caf48gyyeasm",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "1999000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17sfdt2h3vrgssh2fuj8sh9takwrtgngdp5ctsp",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "5134060000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14h7xz0cp42alkpvgr0n45hrvaauvru6l3wahrl",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "897760000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jje09wu5yj2m7j770w95rz6z4009f02dzlmys3",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1pzley5epemwseajvdpgyur7y8lkj0yz66ll2v6",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1m4s4hdm92gc373429fe50ljre93yv8qukc8gv3",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1m7xnthrj9kwvuu87xruz76ffrktg6e2k5773cl",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "140002000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1puu6zc0w4sejqn4lt4lzv42vk8524jrh849qh3",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "10049400000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18wxnuazav0tkzjk22jtpw5swv7sfrw5h9f29pt",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "130000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ggccremcf7kk5pmnyk07nhy3yg46cwfya8v6c7",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "17629700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1enxprnxytx3nu5rjkxxsyk2qwalfu98vptqwhl",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lwy0ym5c0d7syvql6x8k9u8n7wg8vf6c89hcwq",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rpwydlu9rt89q8pur2lu43fn4x9uglffrg07kl",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "2349950000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1w9j0kdfh0q0xp46kpy332ml86999rncnd9sfa8",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "5199000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jrzdlj6dtka4mr837e52jn73erf4pp3yhdlhax",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "14000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1p7aj6328mhan6k2nnzust7ahcg6snzpdkf5prc",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "100000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc163qrygsqxtwkj4fx0h49yys08amztc3zdmarx2",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "2358480000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1w4y90vphwa8nw7gpa644mv63cm4hqc0u5p5r0w",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "765880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fmwdzn50hwgmpeewy67y83fmgdd86edawqmx5f",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "4138800000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rjv3unws0pf4ncy087p5ed0mte0ys2tcs7mfy2",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "5699000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lzx765k422exe9dfrzdesmuwpfj5qlkqhtdt3g",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "4000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14k9fydz2wpc7aakylavehundt6mccq3v7dgnqg",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "141823700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc150ssms5ga9ha07e8fe55srrh4ygjf3uryq3jzc",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "3000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1f9d30pwmmsxtud7lrvu85qgfg4e63rm664xgns",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "9990000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc19a28cx3pn84zmtzf2mk37fk65tg2qz9qt3yrtx",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "9659300000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1spwmtzew0hthzgcxd7wryfzx0zyhxwdjqrl556",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "50000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1j7yk533j5wqsr8lt30p609xetsfl8c67f90tex",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wx378akyawlzcvpnwkuympzhqn7lmm6vmyfw8s",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "3679880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1e9fq2qzvhl87fzh5at36t69923kjxhncykcxyz",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "12899000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1kcahrtxrv6zfqwsmnt6jce6dr3hqd3wmw4e8x4",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "4664230000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1dsfpknv7cm2nvmucy79xdkwck0wps59rurqvfs",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hwpuc0j8hpvdlm9qnmjzzm59ve80py6ugxeaw9",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "8227520000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cqd7ccj4802p3n7ncxqf00mzmycqc5ww0rmlkh",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "500000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gspxwhv82ulyx809500dnftut2ywyuf774jylq",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "30003090000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1e25d9c5khdr4js98nmwudpymv4q3vh8tz2fpr2",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "6000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1k5pdq4cnead7hnsas0vrg729rdxtgdg3ycg9v6",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "13348180000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc154md5pnsrs4vkwtkmn2c8x0uya9de6sl3fvham",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "120701000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1vgs76muschfwxvfn5fxs9ar6k2rsdjuszu2kmk",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "6000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18dmydceaf5cp4zl9wvqpe7eeayyfejuu9rvwhm",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "1007000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qxk2dhxj595he3fl2vm44gnx0lcuvkyhucf0rk",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "500000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1p3lreljsj6zn29j70gn7khg3ck6m5zrxz9af56",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "70000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1394f0mpy9d8pwmysjrc0r43luly38shkaustx7",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1kckxj5c4k72cg3w6ay5dcrr2gmyclya3wr37hz",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1mc0vxd8suj2sw3ykwmuysx0029qj65kdkp6vls",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1d5h56xs77k564355ehcz0tz2msp8h8fkyj6lnu",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1knylz0dgzj4d0ynvwj8yw9fv9mlrcudg0nrllc",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zhu996x82sdh8qvgpkr7lensezxf4jw5x5wxth",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "21010000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gprn6xk7urgl7vzhkwuxqeshx6q6nln5sq3ezn",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "500000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rwfnc90a6es4fyhs7epfm2e80qrptcnq3rvl0w",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "32000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc12xjl79ddsjaam8g5v3t4y2ucldxv7x78dn0m87",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "152009880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17z9cn9mxq3u2hj8ltwx4sh4ce0v7v24dmpasc5",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "21222900000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1z4vhr8s4tk52vs5fl9e4qjrj39ku6pnjenue7g",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1el80ftm7w6jta8j4f5ret0v3j76c3fccvacctq",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "35000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1e3aztsc509668cthd6rpsa6f62d8va7t2630fa",
+                    "validator_addr": "qosval18wxnuazav0tkzjk22jtpw5swv7sfrw5haeyx8x",
+                    "delegate_amount": "2500000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "gRJsEcnLqtZRvg85KpOVDiXBj9QmV/8huaNwYPeHmuI="
+              },
+              "signature": "yf5mv2vBBnh7lppAHvJbYhc/IUkfl4MTsg7fUwrNwWNc3lzG8rzIp8EnSaMoH9m/oa/ld9jhoriioHL9EUJpDQ==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1gd75e99wk9gmcmrlc66jfuah63c6t233ecscfk",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "BzLY2fzPRuWIyujwubRt22naJQy3h++1VWFH1KfXqqQ="
+                },
+                "bond_tokens": "1408533050000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "QOSV21",
+                  "logo": "http://validator-static.qoschain.info/public/logos/qosv21.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1z7t5dqxq407ndjtul0gvkpf27ntq5gtv3zd6u7",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "142880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1w8cs5d878wmlg44r0lfdj7l2jzps9py0xqf0rk",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "25343860000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zpya9smy0g3ft5jhqhgs8kg8ehjwps46lml4qx",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "583770000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nh4w4grxmcd77p8gsvnkjn6azfj78t2puzhad8",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "15358850000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc156hgjwf6lfvpktfj0t4js22zp76sp3ckn5fncf",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "24000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1g7kezjk2rl8tnhzyqjj6ggmr3psn3frrwgy0fl",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1d2mnme0jvy2nhd5s6u5r09j2g8zl3hc087gptu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "21000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wtx0ra9k9dwcejrzxrujavftdd3a6vy3lv483d",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "90000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lau3uej5d0gq2ucannjr0n3f6cgg5juv2un7er",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1f69u9l97uzgxpqnxuyehj2h6st2ezcjrk2gcmj",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10039380000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1w9j0kdfh0q0xp46kpy332ml86999rncnd9sfa8",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10109100000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13nt2kwf27rdv0d7z7kvvmtcegcesahl50r3x33",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "19009670000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc16vz38ywp86mg0g8rda8a8xduyrcrljm5f2xwvl",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "698000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc126w8vykl0fxg97hd0ktsj6yyhkdpzc0tqwtymz",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "3643420000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nmvk09q05u0qhxawkfnc0q8mtx3fm0dj3hxgae",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "682900000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xrgv732x78yd6mrgl6vnwxkvfwxfgulzc8zvdj",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2514490000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lfchyajsqnalthge2kem5wl73l0jehzgkphauy",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n7axm3fa2purptccst0mz2svuehpxv507chsrt",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "15880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xwwuxxfmyrawpr32cv3cdsp7a879zgjjq6hnkj",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1mn3mwcsrqjhfyxst8uwjsetxrpydqclflpmjuc",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gd75e99wk9gmcmrlc66jfuah63c6t233ecscfk",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "0",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1g62rsr34x0v7snalfdgt0hvy3ufghwcm7835ps",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qxk2dhxj595he3fl2vm44gnx0lcuvkyhucf0rk",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "25001000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc183reswu6wx37n6rkqrl9msyhl34w9r9gpfzee2",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1014970000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1z86zsegaf6j0209ywpg8046wlm38nnvrf8hckv",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "25000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14w4arwsmt0x9dazu3pn65jkypugpxte0kmqeks",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2001000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15gwjwhnevd2gc9tmkwpztq0n69syd0qq59uh9r",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "568000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1afalla3k2uet9pzvj3hed5klj4yyye74ewcx7p",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xtmf5jxndd7x6895cmaw9t3g27p9c9ymcepsxm",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "3207200000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cc62ztuzw8pwjp5p3ua8c54n2fknjgvje3h50d",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "12361980000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1c4xwnear7umhps43se53a55q2zll85ccggk3ut",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1tc6vtlsfgwnw0emkrflsrs9p7guj0jszjua3at",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "3910700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18zuk2jtcl3u2lustj6jmukryafae62w9hg9feq",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10009000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hhm3mpnxc6sqfm0w8chjmgfj0suw0kln08wl07",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "50000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wf4wcdmpknqq7plepze4jrtz6gkhfnljhc8qfq",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1800000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s7nsjeyhmuhw60sm4j79x8z5cm3azac0aftyye",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "73427000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qc0skq839utaklk5gscesrrkqehl89tdn0d3hf",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2011880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zrknmpmxrzq4v88qrvl3uwd7v05skm76hq27zg",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "27760000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1tv82yh0eqhj63u7z8lx2jnfx3eele40cr3afde",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "14204170000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jje09wu5yj2m7j770w95rz6z4009f02dzlmys3",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "120011010000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xhak2fr693ugl37ylsj0c6auzz4cyyyhyjwn4t",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n5gquahqqclj6zdv0dh5clka27sla538a79vaa",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000100000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rjqxlj7eesd9nea4zx2ku9wrp6wk63uhuj4jd6",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "100000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ncw8zgqy7mkhm4ccz0ch2dr9eyd3a486t8wj6k",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc150h7vnevmqhhkafga8juqd8s79uxlwt0athmlt",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1946370000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc134xaf600zweknht2g63av0up2frhnnwyrafx70",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "58617480000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u94w7ewfyeszf022ps5xaqtwmmhrucr8qmw7cx",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2066780000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1k97tld8jxk4u886phy2q07ldwjlhpz35v5zzm2",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s62uuastykpwl9a78dhxk7wm8au2pmdp4jvddu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "16729700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nsyga4jltwlj4mztft3p4ux0lkarwc7z4s55ss",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "895260000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc10w8w5jn8uzacq3slpyvwr22s3ds20nwypdl3z5",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "29488880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18d0ugxyrweggnh2np7jzusnpnu0s0qphj9w5kg",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1tdlxrdapru4w73mv985azfz8h8wctl8gnqk3qs",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1462000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lyjrgf4epqeyg4fswv09elwh79pardvprc3jws",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17e7f8ltrtc8xnjvd3wdp3s0r79wa0dkmhp64wv",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10971290000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1aw463fk4ke0f7z6xfz8cwn4xeq5v494tzrwszs",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1h5kajry8xmpqr259e7pejtrkxe2ukzxx6yfvnu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15dz2slcxxx0zl2yn7nstq8kwt3yf6a5hw5j3lw",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1107000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1x2masrr3lgs5pzdepmmmv3ptcaysndsmq8r3hc",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "12000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13xnplzse86znhqyx5lzlv95ewd0d6efqra4ea0",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2500000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u0e9gfvl6sctzysjnrtfvz9sh6yu2lp84z5c9t",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1efk2eqx74puk0k9he7rzl2ufslj60vhmf206c9",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yyg6fwmq9ms79q5ayc0yjkkwqk649p7fgd562s",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gdp5lnl6vh2a9qyl7ll2phrn6z8x2e60qke2l6",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1j7s6s9mv6y3dgvhfcfutyuk38rq9360vvdvc3p",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc12jtkfm3ddtrujj0uw6nqtgj8yns8det4z0nrzn",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1utnz3u9y9d5m8w0288ujmc9f4gwm5cdwpq5r89",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10778340000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1sdqt7ersszrxfwk4fjhh3j3v3xz9lt2cxjvmgn",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gprn6xk7urgl7vzhkwuxqeshx6q6nln5sq3ezn",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10526190000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1h66mhwn4403l49snd2ss4y9ng47gt33ekrx2y8",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "33248520000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1dxxywj0tvte8ml5alq6kjx8c0r42ng9uyx60gf",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1dfcsvqd3tdhmaxmf8z3n27jm9uua4cedhsdl8z",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "52771970000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1tmhqf3rlejg5jvj8sddrpdyyewjcwetawuj7e9",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1kuwxus8038mdvc4cet2f5vzhh244jte3zs9295",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1024470000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc197ph0xnkywx8tmu7xzjlzjtsrskqn8pkwun3g2",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1575670000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1vsccgcysfhq0f2u47xw8ps4wunn84285xgu6eu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1135620000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1aun3jyfrs7fqdfru6qxrwekjpf9lmtay9utxnu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1pgfl6qc8hg4pnql3pths8mclm7fk2ls5h6v0cu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1755250000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u8y7mee7yvjjan8q4s63aq25w9vc4uuclkydae",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1vgs76muschfwxvfn5fxs9ar6k2rsdjuszu2kmk",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8815280000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc10epw4074naukqe7senpz0rm5834s6pwvlmekfe",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "4100000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ek05a3h7pmagdlnqgc8kjr7t3vjqrqkpe34pgw",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1j20mxcf2098tgjhczs0hdaaqv92mnlzxhgc0c3",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1uh9cx0xd9pw6dv3c572hgczylqmer24jgkdarx",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1glhwz0fyrlu0gaj9gcn05dpdsgdrvjd6hytm4u",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1glt25tygqg5sk35th6fr4zm2wms4a0ml223qr7",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "6969600000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lsvr03dyuk5u74ak005tts7djpyyv96vflwvzd",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1347420000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1z6a8qf9c3hgr7suvalmjk7v7ly758axkj5ltcf",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2404760000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17fx2zv0nmcctm6xhcz9a6cr6cs7w02m4egkp7f",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10127670000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1f9d30pwmmsxtud7lrvu85qgfg4e63rm664xgns",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2451030000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc19a28cx3pn84zmtzf2mk37fk65tg2qz9qt3yrtx",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "30213520000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc12pdnv8j202a7mr4uqh7405nvkymqza6u3cc5d5",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1979000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zjyhm2tzfnsqnrplsn2xqzdpyp40qjrg8cuv8f",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "28295480000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ydhdhexf2vc6cf0zvt9l0az99cqdg7k4gx8enu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "564990000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1za8uvn8ezts47y4hglqpgjc2jhnjmqhea3r2f6",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1la7t42vh24e9k2vn625p9tdlp4vhw0qrl9kg8x",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "11646630000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1znn8d7f2yzps42f9k6rfj4l5a7ywzp2cllhels",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "934540000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1m2nwcancez99gagkthasq04e85ejn64myamcg8",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "426700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1t04g8vnuhxccy2ynscdp0zv47qcfs2wr48g5zq",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "21715880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc147pjnv64h9wncskpj5a6lq2yur7tejg5lhasfa",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1q6hdptys52jpnh2u5v0s884plg9s655k2cpqc6",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "4500000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hnh0y3dthpfxx7llcxeq0uv7vu65glmea692nr",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1902000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ddzntc3msl2k7uush26g74f76kkqc8tctmnyh9",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17xveg0y0j2kyvftgft9vt38t8n0k02fdtpu5lc",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "11573220000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17w67k6k2ntyh6yplup3knxevct0sw95c2g75p3",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1023fucqqgchvxlgvqv2vk4jg6u68zllfvsnhsd",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "30486000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc100zg7xgnkczmj2yeafmfyqhjet02qtmgvg8ke3",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1434r5m833jfjjm2f2jqwh0tvlr4z8zefps7t2s",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xak4femzx6yzh99lwhvrse0as3xt5hs6cwt9gg",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1390150000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rse4lvfv8skpq7l7u7a3p9w49pfgp605nzk5cf",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "31612660000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cp5uqvc6re6278emjepvjx6q8xu0svzqzsahmu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1056310000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cyl07s84468dn38ej5vrw9cq5f2y3txz5sgvky",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1sw6t2gthepcl2gch5g48u5794d43whzjmexhqf",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc102kgmxlxk20rfn5095zs9tl4vt26hm4srnvuw7",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "999000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fhx9se56djlfkzjur6ahdxkuexufsv5udr85kz",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "136000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1520m7hcw408z5pxe0zh5yxhd0wap270c75zkce",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8309970000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18axdaaaqjfjg7etrz28lwq98shh9ah5ue030dh",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "5008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1698m8sgn49vefegkewdsa8aqkpceucr597vp90",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "50000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15u2lcxkany564lv7v3ryman895sfx6sfmhn4wn",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fa0kh5x2wxsa9yuvca7essygr8c6nsnejydmr6",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nypv3lmf5yucr0cg7egunkgacng8d9ylp94fpz",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13gws6dr7x5xml5lz040scp74rnzksx3l7nl2pe",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1549lqlphplql4rycztf4afazha3dzelqhkxads",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "7899320000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc10ev2lv6ua5q3w5yjmz45ygwkqyymrkka7syt0q",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "11273150000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wm3pkpwrhlnwqdpnlzz7e3ktfhkmy8enaqfre9",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc162d83syx5hsq5cts72slpntu8yv9p0eeutxfxu",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "5057560000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zjdnhk4mvgva8revekfshkqsvfy5suf9ckunnl",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2401470000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1q5sdgfnu6n6x9qd0qf528n9fkj2axkkjumw6ql",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "20007000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qv58sryhja3uyz5qhcnjlj3lxkx6yjcyqv6gta",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1psa6cfcy40qkpn4lgfmpte3f3vsqq9mcfpg2c9",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "20715000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ye4kll3mv8plkt5an9yqknstt73qxn5vumazcm",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "38886000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13zepa3ph3ffcnz3zujzkm0lh2v4kw6uzwslz5y",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10006000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1g43p6vf3faw7dcpw82rzca8fua8hxzvg7w5q3f",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "50007700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14vnh964v6qq97xhy04dawdelmnzk7xygk3r9f4",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "5379630000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14mthvkq4vuvat8qre8cthfqfj4farf7snmysex",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "3000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wxm4fhv469hnm5rgzxx8hr5r3kndyqrtwy6pvs",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ajwc73lv0hzacrm5umzj8vn3mlcr0nycu9sjdw",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1791260000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zav9d6kl9vu58u9dd7y3fhnctqamljh78hp0u3",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "10178650000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fmkxql8lhfn5y776sys322ukh7j5s86pm3xuxz",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "32600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc10e3tll275vydh5wf6wukclt8ww2ch9trlykkvj",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14sarlpscuxs904tyze6x3w4y25h7gggttzg265",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1h7k93m425vrrxvq3p7kxkey504l8cgg2m09n0d",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wfd9jgnvk50l492jtxagnm3jgayft7m62vjq4p",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1la7zav72dnlckkf6q46rga353dmf5pxtfh9v5k",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1017760000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc147zj89cjr6lknndh77f4dv4xme65nj4gl6xrs7",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "473450000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n6sup0rc597f2gk9q5ysyh69fdx9n3fwngzu2r",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yazzr6vpcujmfzfrvplu9wfwyvjtkdzz3r2rnj",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1frlvxflr3rdq2dg6ccm8l0rwycv85w6s8wfnes",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1008880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1c5a6jfpleu0dz6lts389zu2l9pxs3kmusgzzfg",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rnuu87347zly3mxsy5p2cnjve8gr24ue7p6dep",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "1176130000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1330rhxgnmzf6lj8y0sq6atq75udq3utm3n6ens",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "676000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1vkcae6jg87u0uuyn3atppu4yjgfxhal40cqfad",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "221400000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qepy3fdf87jl5fly5efnupn4psdvxuyqypawl0",
+                    "validator_addr": "qosval1gd75e99wk9gmcmrlc66jfuah63c6t233pg7m0m",
+                    "delegate_amount": "8007000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "j/Tkz7haqDAwppYlJbp6w86rToINfrUznPH+ElUOXdM="
+              },
+              "signature": "kVJ/EBNIQdwjgDH5hHnNdMrWB+t8IWiT9dSnSSg2ooiApHWkQg/IR+O8kbkWizQ6v6rOaRAdTsUHf2TdGCjiBQ==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfs4dt4m",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "NyaM8AbhZsuuBrcK5YzE1jq9OwvRULtVO4C5TmfVwzs="
+                },
+                "bond_tokens": "95088000000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "锐格钱包",
+                  "logo": "http://validator-static.qoschain.info/public/logos/rgqb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1fjk6sr0uplpuzg8yjlyvl7hud0al3fjq8ekpv3",
+                    "validator_addr": "qosval1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfg9rgnk",
+                    "delegate_amount": "22000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s2wmyjax3q08ya9a2w807zdxtq8t42hwugmwv6",
+                    "validator_addr": "qosval1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfg9rgnk",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14zu4agxqr8hhxapn3rqlacmrrx36munlyaswu8",
+                    "validator_addr": "qosval1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfg9rgnk",
+                    "delegate_amount": "17000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n6g88qqhn7u35crp8m7ulwyemv79zu2djlt877",
+                    "validator_addr": "qosval1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfg9rgnk",
+                    "delegate_amount": "20088000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yv28q54tynx668epk6m9vs4atjzln7wm2z32c0",
+                    "validator_addr": "qosval1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfg9rgnk",
+                    "delegate_amount": "16000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfs4dt4m",
+                    "validator_addr": "qosval1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfg9rgnk",
+                    "delegate_amount": "0",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "Npxiia5PH0DVdmciQtCUPVPaqBySULFUc570xbGYRKQ="
+              },
+              "signature": "I4Z+FZYdR/8sWVDQwtdvKZv6l0+iqWjxwkqWtb8Ey0YrcM8sqyjk9dnPXYuFCC4DdI7vyRR7N0BDI5qJKJgNCg==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1ffzegp4sa4fj6d9xhnafarzlnjy3laxmmqgccv",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "19I6Wx5mKcbriSsF6MqCYwdOieQ+K0RbujbltV8f54g="
+                },
+                "bond_tokens": "472652990000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "仁和资本",
+                  "logo": "http://validator-static.qoschain.info/public/logos/rhzb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1m0aky5cc8c86vry2zmgl4pamq094d42cplwnrk",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "10000930000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1m9wuq08vv34qegsuz5aq9fkafggcg2440laeun",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1q6mp0tshue2mlvptjd2mkpfw9c8qqpeq7gady7",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "111556210000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ga24nzlmut0w88nef4ge76jxhtshuwrxuht7pg",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "120880630000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hs09l2f60ygxxeefxxejmj8ncgd0hx3p8x0adf",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "6260000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nmp3y8pxjwtwrm0sgnd49a5zs9lu9xnjyukw6a",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14h7xz0cp42alkpvgr0n45hrvaauvru6l3wahrl",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1symuqsqmzpj2zv0u6msuy8vqe76uzkxp9lpevp",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "25168230000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1dtdsm7t9nqf7rwa2zgwjlceyy9dnl2s6eeew88",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "2467110000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc10a9jar2hxu5xzd834s2jw5hsex2y4rpc402qnu",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "3999000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1q9s9s4tafkhywppre62csa9alp2a6r6vm6njw4",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "1199000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc12a4eg9zhwq03ws5pcv4cqlldc29tk073pe7z5w",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zstrkanfu03hsg890zaj599w2pmpk629an036g",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "1120880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yyg6fwmq9ms79q5ayc0yjkkwqk649p7fgd562s",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ffzegp4sa4fj6d9xhnafarzlnjy3laxmmqgccv",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "0",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc197me9gvh6zss4rwdkz674l9q9hcnah8hu52ha5",
+                    "validator_addr": "qosval1ffzegp4sa4fj6d9xhnafarzlnjy3laxmrsxm7p",
+                    "delegate_amount": "100001000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "8gnbDpep7O1NlzShRLBbnkLd52Zs2G+vdxKmtSp0RDo="
+              },
+              "signature": "QcoK/jbz/0dUg5alk0+vpcPGKYLzG44oU1PRT+bkRGP3WKFbsJ3zi5xu8f4YGSbrEMfvHN2hULjvHKDhaVgDBg==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1ufnx50p0eacnetsvasxa22t4uhef6e42c8q7z5",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "9wYeOVVLW0R/lTn9ynx4V+VHiYdbrgzcGR2EfHelGj4="
+                },
+                "bond_tokens": "326075270000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "澄梓创投",
+                  "logo": "http://validator-static.qoschain.info/public/logos/czct.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc14h7xz0cp42alkpvgr0n45hrvaauvru6l3wahrl",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jje09wu5yj2m7j770w95rz6z4009f02dzlmys3",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u77khstw2l50vtqp52c9q5eg7ncfy8da2qz9ln",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "2352370000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1uevyxzam0q02ttg2f6xyue2dpte58y95tnwgzy",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "7483400000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc19sca2mqnrla92repmq2qeul8t5555vll40r7ly",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "358000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1mevnvexmrvpkuhygunrx3h7mf9xgcuklpzg0pf",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "20881600000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cpld4rw3umhd4n5exk3gmrhrxal07zxw3fewql",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc19yx58gc7pgs8y4xqyf7p8sv22gj5dr7ed8r6rd",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "10009000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14ag0sr052vazz0sspxgna7gecfeylx6qm4qae8",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "3700000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u4h6ahu4fv6yn0p2fkcs7lpcwa5f9vckyq9adx",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "3552840000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1huzry0xz8zdxx3qkqy7znvftsz0jxyumr4q5ht",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "8600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1llhp97lrsdkscunavgtzpakhkyjey5vxuxuctx",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "1530440000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ufnx50p0eacnetsvasxa22t4uhef6e42c8q7z5",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "52005000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13dz8v47lg66pvqzwt9wyvuvlugnahcejnsacja",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "2434140000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15wpww86n4s9fr7a87eg7nzuapqa9e8q57kq82j",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "156580000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jwh2hauy6vrw808v35xhsklsdwc23l52940hm9",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "20274690000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rdmj9fy3v9kpw7xquru58q8nque4wepgrxrztv",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "1507000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1flgn8w85shql5aqv3n09qrlz4avy2yat6fhwtm",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "621080000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1m7dx5a89fcvgh8fg9jlazy42rjcupt6qvz8ns3",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "10000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1sa6rzvefw2ra8cut798zj6whxncqc5klpa33z8",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "10778250000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc19kslrz2xxvk8j9r4musqgjx88ukzr53lj2xvex",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "168855240000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15ntka2f9tneyfdrd4v2dndaj3nsanu7nv3uvr2",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1knylz0dgzj4d0ynvwj8yw9fv9mlrcudg0nrllc",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hmtc029hgwh00jwv8c997397aal2ad6s2gcyvw",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "1299000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ckvygvtqgl4866war3pp78jn22ecftt5cl3yg7",
+                    "validator_addr": "qosval1ufnx50p0eacnetsvasxa22t4uhef6e42qhwaye",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "H74+JHHLXYeD8RoDnX7IWLFJVxcBKJ17EhmqhMdm4KA="
+              },
+              "signature": "5jXiyMws8cU1x/9pgW6VBytBdJLm5DXurso1neNzyqL8t7lsCRnEDqVSeSoa4saGx2pV2L/kSAeNHSFzx7kIBQ==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1nfx7r6zkt06hj0x22534m3ac0ctd2cn8a7qymq",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "i7puW7uFLdoqg8yADPWfBQUCPczP26wpvwZaGLrMyaQ="
+                },
+                "bond_tokens": "106019640000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "Qwin_Wallet",
+                  "logo": "http://validator-static.qoschain.info/public/logos/qwinwallet.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1uv5qdvsmfhr4c54xsnxuajyhzga83eqj095chs",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "313130000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14h7xz0cp42alkpvgr0n45hrvaauvru6l3wahrl",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nfx7r6zkt06hj0x22534m3ac0ctd2cn8a7qymq",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "152440000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ztru8cd7c07tldkhafaplwuh6yerdgrnz5ey0a",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "71220000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ynfcz660ljccvvg7vrmjy036akt7suezz30trm",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "63746540000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1knylz0dgzj4d0ynvwj8yw9fv9mlrcudg0nrllc",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wtx0ra9k9dwcejrzxrujavftdd3a6vy3lv483d",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "10000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1kfqr4ttrn767usdqg8rfxf42pxmcaxe7uff9e6",
+                    "validator_addr": "qosval1nfx7r6zkt06hj0x22534m3ac0ctd2cn89ww8ad",
+                    "delegate_amount": "1726310000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "vmByHhJIUKkCrh5G8J3pKr2YcUDjNdOSodAULE7BEvc="
+              },
+              "signature": "/boRBfxpgK+uf2XryAbhFIQLbsthn0ajFV3fKwVU/hxuxWbARsmT4+7OJNwMfFhMd4ZEVNJ3HvO1O7PEprl3Bw==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1zjrcmn9jv5kufv6asv08rhh9gf7x7w9pfz0jap",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "Pnz3I3RIc5UK8DDYDdTWJZNtZgi9STX+yoaLRT3Pm5M="
+                },
+                "bond_tokens": "177892710000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "币胜资本",
+                  "logo": "http://validator-static.qoschain.info/public/logos/bszb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1pnk5lc936h86tsa9k0dhqm9fgfzr5pw6dnyppz",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "27618220000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hp4pkvwn33l0tus6zgc0dc9s3fqu5eld5up35r",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "30387660000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xnp29hrwgwpz3wng9fm7lc9l4d3ys6jmn0gfv2",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "365700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14gxm3km686kaj8hxswfd026fuklz8th07y3u7v",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "13999000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13s8xk7gzgsfek7lv66mzfmzuhj6a2hvuv25tz2",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "21780430000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14h7xz0cp42alkpvgr0n45hrvaauvru6l3wahrl",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "17000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zjrcmn9jv5kufv6asv08rhh9gf7x7w9pfz0jap",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "12796980000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc19cquv9p3q99ak2u82sfpeagj7e6vl0laksdynn",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "1404000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zu8wanq3c95u2l3gpz5ul3c7yqhk52l54c8xu4",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "9999700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc126jft2mlqzvvdvmdxypu097wyamuv85h8kj809",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "1159170000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jrq9try7kz6h32nayj4latw33kughs3mhx6pje",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "6139000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1kl2cw98wqdjktstzuatgyfpt2a08n4asd4zfx7",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "19100110000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nlffkxy0u2s8tstzsjes8grr83hcv3nvjqyaaa",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "13961980000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13wj3g6etskklutx5mwgu7avwpg9ex4zjamyknw",
+                    "validator_addr": "qosval1zjrcmn9jv5kufv6asv08rhh9gf7x7w9p3jp3mv",
+                    "delegate_amount": "2180760000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "x0R+Mvb2Ggr5+7mHrWSpCwv/+lcd97NyPP2zUbxKd5I="
+              },
+              "signature": "yBSHfJS8zCtysuQqC+uivEbaoZeEmeerewZKQDFqerNtCd610bcGwjAD/Z62lK+vF9iiqtG+Xaoi7W3FAdWeBg==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc12lnpxlz850v88z0u9jt47ckl5rxfszvnyg5mz4",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "gJcEeddyKl9S2Oawksk2UflW7wgMQnXxmrCrCFSq5RQ="
+                },
+                "bond_tokens": "336174150000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "翼圣资本",
+                  "logo": "http://validator-static.qoschain.info/public/logos/yszb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1jrzdlj6dtka4mr837e52jn73erf4pp3yhdlhax",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "60000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1uv5qdvsmfhr4c54xsnxuajyhzga83eqj095chs",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "109310000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xtpjqptxe4y3wnzfwkqyz2tgzemuajf2ersjm3",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "34401250000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xc5wkf4nqyqtcmww4yk8s9ju6sfr02ph3ea7ya",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "31413650000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jje09wu5yj2m7j770w95rz6z4009f02dzlmys3",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lcy3sa676zejx94qrkls42fqkfpd3z7henx059",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "20410800000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc12lnpxlz850v88z0u9jt47ckl5rxfszvnyg5mz4",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "37697380000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fmkxql8lhfn5y776sys322ukh7j5s86pm3xuxz",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "50000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1g43p6vf3faw7dcpw82rzca8fua8hxzvg7w5q3f",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "50686050000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cmx9e2jaxm3a68n68qwccuxg6y7v3qj3xffvsg",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "32833540000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1023fucqqgchvxlgvqv2vk4jg6u68zllfvsnhsd",
+                    "validator_addr": "qosval12lnpxlz850v88z0u9jt47ckl5rxfszvnuc6cyc",
+                    "delegate_amount": "8622170000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "ZCiuHoJOiPvAQJNU32TXrtLHO2PC4/4APUMWcBhuVJo="
+              },
+              "signature": "7n5UOO7LjeGpLDkX17f2N8v/peHblG02Eifky9FYK4g8HNmOVtITnr56lC5x+8DLNNCmaXlBFElnH7uVuOz7BQ==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1dm5t3g67qy5zkdgtm6l7h6t6lcecfjdukuhss4",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "FwPfdxVGrqdfjWjViD6x2qEWfwTted30H/4VvV1pA58="
+                },
+                "bond_tokens": "102667500000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "缔联科技",
+                  "logo": "http://validator-static.qoschain.info/public/logos/dlkj.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1dm5t3g67qy5zkdgtm6l7h6t6lcecfjdukuhss4",
+                    "validator_addr": "qosval1dm5t3g67qy5zkdgtm6l7h6t6lcecfjduwvenkc",
+                    "delegate_amount": "0",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s2wmyjax3q08ya9a2w807zdxtq8t42hwugmwv6",
+                    "validator_addr": "qosval1dm5t3g67qy5zkdgtm6l7h6t6lcecfjduwvenkc",
+                    "delegate_amount": "25000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fjk6sr0uplpuzg8yjlyvl7hud0al3fjq8ekpv3",
+                    "validator_addr": "qosval1dm5t3g67qy5zkdgtm6l7h6t6lcecfjduwvenkc",
+                    "delegate_amount": "17667500000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14zu4agxqr8hhxapn3rqlacmrrx36munlyaswu8",
+                    "validator_addr": "qosval1dm5t3g67qy5zkdgtm6l7h6t6lcecfjduwvenkc",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n6g88qqhn7u35crp8m7ulwyemv79zu2djlt877",
+                    "validator_addr": "qosval1dm5t3g67qy5zkdgtm6l7h6t6lcecfjduwvenkc",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yv28q54tynx668epk6m9vs4atjzln7wm2z32c0",
+                    "validator_addr": "qosval1dm5t3g67qy5zkdgtm6l7h6t6lcecfjduwvenkc",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "sJYoL/kts7WRFZmig87fkaux0QTVCOgxULP98KYxYEU="
+              },
+              "signature": "weMZlfV/XxOLzVdA2mxa6icEd8+Oppo8FSSNjo4OSN3AcUqnAGNO167hPlovWVfxoH6jrxes6FfsUDUhYWKUCg==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc14nurktsjkmd3r7kz0leaxdkymzfp2suq9jgvc3",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "RxgmFlA1nZPtY+DqvIOPYJfz2ZvjtGxOzAokkRWYiwA="
+                },
+                "bond_tokens": "214454610000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "传奇资本",
+                  "logo": "http://validator-static.qoschain.info/public/logos/cqzb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1ddzntc3msl2k7uush26g74f76kkqc8tctmnyh9",
+                    "validator_addr": "qosval14nurktsjkmd3r7kz0leaxdkymzfp2suqazx07u",
+                    "delegate_amount": "62867730000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14nurktsjkmd3r7kz0leaxdkymzfp2suq9jgvc3",
+                    "validator_addr": "qosval14nurktsjkmd3r7kz0leaxdkymzfp2suqazx07u",
+                    "delegate_amount": "48391910000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1p6x6x6z3fe0ruyl8ud7rk2vkgfu4xnfjhunmvr",
+                    "validator_addr": "qosval14nurktsjkmd3r7kz0leaxdkymzfp2suqazx07u",
+                    "delegate_amount": "30007000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ergfs3czuu4qcvuxk0m0cp0wsuw4kynjljcp7l",
+                    "validator_addr": "qosval14nurktsjkmd3r7kz0leaxdkymzfp2suqazx07u",
+                    "delegate_amount": "1000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15f35g8tv3yjv3a47kzrcm0kk4uefyudq9y9yv3",
+                    "validator_addr": "qosval14nurktsjkmd3r7kz0leaxdkymzfp2suqazx07u",
+                    "delegate_amount": "41000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18zuk2jtcl3u2lustj6jmukryafae62w9hg9feq",
+                    "validator_addr": "qosval14nurktsjkmd3r7kz0leaxdkymzfp2suqazx07u",
+                    "delegate_amount": "24734830000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1mlxv6cgccqhvmzp3a7lak5rk6ckyprpx2f0rz4",
+                    "validator_addr": "qosval14nurktsjkmd3r7kz0leaxdkymzfp2suqazx07u",
+                    "delegate_amount": "6453140000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "LjTLDvCURTEUayS07xw111RL3prBujjwSvRuIuN+tRU="
+              },
+              "signature": "kr3wRgppvbdI3EV8NiUzeL7pV311aM5vSm+Jj2ZgTuIeTLbWOLqwxjhZKrwddxK7xNT+A39hc/PVOLxbhHGnAA==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1kurqus6dq8fpkqtj44cym0l30sym2yxkkskzqm",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "nfpN/M7b2gVoAGfkCskYjMigARZn6SiXBqcaSjp8dP4="
+                },
+                "bond_tokens": "166986000000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "古雷山资本",
+                  "logo": "http://validator-static.qoschain.info/public/logos/glszb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1tcprgyswq2ak93j9ks8s9kt8gdqqnj5m7zxxmz",
+                    "validator_addr": "qosval1kurqus6dq8fpkqtj44cym0l30sym2yxkwqcpxk",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1kurqus6dq8fpkqtj44cym0l30sym2yxkkskzqm",
+                    "validator_addr": "qosval1kurqus6dq8fpkqtj44cym0l30sym2yxkwqcpxk",
+                    "delegate_amount": "146986000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "4IdiGjktdckKWEtA8ck48P2fMBOvn6VxSpFE2994/r0="
+              },
+              "signature": "/MfsEs8isZAZx7h83l2VkseWr1yDoTg/BDDZGGhRbQqXSTIjeYP13ZzHdbuufSDWK9DjTfNFLhawUqdjQpVNCg==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1knasnqxcajgagnagx2vwsw0zqy3qz530cww67w",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "bqGTpeFomfm7rlwDpETPnI9aSE4HAK762MjOrVfx/u8="
+                },
+                "bond_tokens": "100596660000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "航天正阳",
+                  "logo": "http://validator-static.qoschain.info/public/logos/htzy.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1knasnqxcajgagnagx2vwsw0zqy3qz530cww67w",
+                    "validator_addr": "qosval1knasnqxcajgagnagx2vwsw0zqy3qz530q7qecr",
+                    "delegate_amount": "0",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fjk6sr0uplpuzg8yjlyvl7hud0al3fjq8ekpv3",
+                    "validator_addr": "qosval1knasnqxcajgagnagx2vwsw0zqy3qz530q7qecr",
+                    "delegate_amount": "17600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s2wmyjax3q08ya9a2w807zdxtq8t42hwugmwv6",
+                    "validator_addr": "qosval1knasnqxcajgagnagx2vwsw0zqy3qz530q7qecr",
+                    "delegate_amount": "22900000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14zu4agxqr8hhxapn3rqlacmrrx36munlyaswu8",
+                    "validator_addr": "qosval1knasnqxcajgagnagx2vwsw0zqy3qz530q7qecr",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n6g88qqhn7u35crp8m7ulwyemv79zu2djlt877",
+                    "validator_addr": "qosval1knasnqxcajgagnagx2vwsw0zqy3qz530q7qecr",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yv28q54tynx668epk6m9vs4atjzln7wm2z32c0",
+                    "validator_addr": "qosval1knasnqxcajgagnagx2vwsw0zqy3qz530q7qecr",
+                    "delegate_amount": "30096660000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "DHsicisNaAtipqwylo/pJ9zrDVsAKGFCKgaimY6oUic="
+              },
+              "signature": "tbLseStbsrPv0iK3xXl+epLTV737p/a3hGFokDjzMs0ZNUv8qESlkfMJE9zMYDvnCwWtmposmS/G01MIs7ueDg==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1vcfetxedhnkcfq8h3km2nmgtfmh0vhc04tsz0k",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "0wfQrR6Eo+WGZvNtJGnJ05PbZnZf469r+J74hDI/Muk="
+                },
+                "bond_tokens": "771349490000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "德道资本",
+                  "logo": "http://validator-static.qoschain.info/public/logos/ddzb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc14h7xz0cp42alkpvgr0n45hrvaauvru6l3wahrl",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1vcfetxedhnkcfq8h3km2nmgtfmh0vhc04tsz0k",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "21889180000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ckvygvtqgl4866war3pp78jn22ecftt5cl3yg7",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "900000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc182pksrkl9gegwuj3uj35vuwn2d7vjg60hzdzk9",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "51200000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s7uzupq8ygtxhkxgrzuw3gw72p06sm4pe0nvrk",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1913260000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u4w9m2g9j0f58nq6ny6huckjshwp6r76y3q04p",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20000190000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1k4ham5ucc98ualt6v999trfn7dkpd2xtq7dhu0",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1077340000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1plc66sammypdrx4g47u47wsg9795mwqwn84vux",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "746040000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qm9rnxrnawn5k2nmjf98jw3yl5etcv7hmr6jz4",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "4209930000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1je37x44p60vrzwcrph8ljfvzcsw3wppm6762n7",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2100000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xx7vkklwy4q86s9xsvg52rhu2j8f3t37flu3r4",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "975010000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1e5vgpervrml6mj3dumgyxlvakq0cu4udph7dep",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2235470000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1vss7xwavnpykf6nnus8ge89expqjy29c0q7dl8",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1101880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1r3w8tfnu6uqnl9njf84hgaa96luqfuukhdhlf0",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "605870000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ps2t5tzmeet9tqzkqt79uzvu6td54te7vmg060",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "695920000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15wpww86n4s9fr7a87eg7nzuapqa9e8q57kq82j",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2094090000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ch28qf3d07jkz3g7jg099t05fmwp6djv203jnu",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "487570000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14ke2mhhwvvt0u7qf609llkp7wwjhx659cwlgyw",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "5884610000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hkgz9njwm53jffhgt5m3hy3xxlrexh3wwkq2tm",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1000930000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18e532tuu6cl6vs5yk7vgsh8dd3j432hhzkre8d",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "5098080000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc12m6nltrzwhxngyvex672w8e0rlg25uawr5lztc",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "21218940000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nte6es44fx7z08anrtjzg7npdnmczevt5pdvrw",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "6041300000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc128206lqc5fx5vwtkslgtrgzgu7k9gduchc9hpj",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "400000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc173csnpwvnufcm0wad4rteq4ph7k8syv8g8gnye",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1kkuq8fexck80rv4xwfmp002t0xp3ex75kk226q",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "21818960000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1e86cfdmw9cs3qutjetkh2frfmtlhdvg8anhwcm",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20007000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc126jft2mlqzvvdvmdxypu097wyamuv85h8kj809",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2162590000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zg7t0j9jqvvza7hx9n8raad8rzwr69mey8f9sh",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2784140000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1vy42lj93xc024n3dpjcfw4km4xucq0mw6wyqer",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "400000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc105ddpvhtvaty5qwsnk3ukxss25x2c7ykax0txn",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "12860330000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1uv5qdvsmfhr4c54xsnxuajyhzga83eqj095chs",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "851750000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1y4y82u6ehdsklk99mrhe2zv88rts347de2lt9t",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1240990000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc10wj5p6q5t5kg9cq5nu9hetyqm5xx7t3czfzd3q",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "975070000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jje09wu5yj2m7j770w95rz6z4009f02dzlmys3",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1shwj4ckxglwlpmt9kfulqrlkflt6qx3hhgf3yt",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2317980000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1uhm432c8vz69n6px9e2g954ca0ux9tnygsdczl",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1auq4jcdqvqzh20t2rg6wvjdnyfqssqdqyea0wa",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "10036340000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1l0t725q8f4e2kajzctc0ew98qhfhw3w80rz2ra",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "828090000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rjqxlj7eesd9nea4zx2ku9wrp6wk63uhuj4jd6",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "100000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jwr7hh99ah5yn0g6342z6tpt94rrgyldhkqzh0",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "53102390000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1865l653svw8mpw9lc92rsgwtc9cpa0ww48cxfw",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "560390000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc122lhxdgpqh7zhf4x2reak7xhddm5wm5slth8ge",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "3171170000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ruwc6y6nw2cr88yk2uamezw2dys5z8757cgww0",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1200000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17jgc39ptg2eqy3uk9tq338zermjhy3qendvafh",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1030930000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lyjrgf4epqeyg4fswv09elwh79pardvprc3jws",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "50007000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yn9l5xpjshrzu346wvpqpv2t97expupj8puer5",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "761800000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lk6l0lf7xmt05pfkauhv8mfr7yemettmqxhjap",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1000530000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1flgn8w85shql5aqv3n09qrlz4avy2yat6fhwtm",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1199000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cw9y553xle2fuphuqlsjv99zepal6g0xw7d4a5",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "24281230000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rdmj9fy3v9kpw7xquru58q8nque4wepgrxrztv",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1090450000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1sa6rzvefw2ra8cut798zj6whxncqc5klpa33z8",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1100000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fhnzzr2h43n3wanx2z062unwhu9k7t0dc9h3gs",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1254700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1aen9d8s87lqg8nt48uczfwm366tdlldyh22zea",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "652470000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cpf2lvx7788lsuvs24qjh7hkkqcs9vcv9yz863",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20496970000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1v2cjpjal8ad788846l4zmskrc3nmezp2zys00p",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "6414190000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15ltysj5tcy0lx86zu90sqetnxezscytgl7lan7",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20011220000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qqy2lsc8g92lnmaklcp7jt7qkvaympdxfc904j",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "31288190000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yghurdwkllgequuwcrhv6p25sdey70sej6qgk9",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20040030000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1v97vz3qmgafp82x3akv78nd6jncwwge26sc6py",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2394070000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc19cq02slga0dvgprv93cksmht5kezg7y6wturts",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "3735180000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hs5hh2jzvmwhwwsqt6z00jp6nmeg48ftu8jre0",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2998990000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1lwwjzxx6npkkhjh2vh60ql9ypu2g7xun45enw3",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1378620000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1tg6ca0nefprd3f98yu6ujrknsu9kjqk53ykvye",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "3762590000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1l2zgzyq0mfrhf89u7ky69zjd03jujfaxjjqeqf",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1098760000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc160q9kahtk7dga093srpklwr4yzfg6pgt0auxus",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ssfqrh9gd0a6gx55dsk72leutz0slsvpdk5efp",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20350540000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gjxz362neem7g4f2d5ls62emvh22pt4tfx9q83",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1709290000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc109ehkg3846aret90x459xw9qlsqf34v0sq5pmx",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "479700000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jd9lkrtafhx74jc75a4y9snp5jlwqhmqvzl7ue",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1877000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1563aqt8a8zsdz5ltkqh84uzfjcw3twk8dfuzn2",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1480750000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14hej5xg0l2p5w2njdj84dxu0q47v6uvvhkrm2c",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "21226570000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1nyrheq66mwgyv3c7yctasy059et7js75xtnp5w",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "437160000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc13vjhvf8eyrua9svt9h48t3kq8v8sstprvj64k5",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "3960680000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fyx2c8mwq97jejstwhtqf2qkmarge7fjycc0ec",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "25008580000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1h4tkppasmceayllxhepymkudel2nzekgyceln2",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "7240790000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wh47wyuwmz3fzyk69nndpgz03m7x6kfkq39xnf",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1532810000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hr4zsjnyctgkts5k3297ngleqemc8vy8ggs5m9",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "3076510000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xc52qqyss94g7hypnd2fl5fvjjk8l25qstdluv",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20056240000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc186t69v0ruhtdumtgl6slp5mydyvng5a9t850wn",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2411370000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gnyf4xlxj26mzdq6g49jh42m28xxka05vuad69",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2485170000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1gskjpcjmpsxek8n2djq5f2v5rj5akckhcpgz4h",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1008070000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1mevnvexmrvpkuhygunrx3h7mf9xgcuklpzg0pf",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20028360000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qt6ee7wjqvgvqufeg60kqcssygjs9eqn8dcnf0",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "22214900000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u39k5dhyenfdunpeggef73gmn8wmx8fv3p0u4q",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1616180000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1dakkpq0pq8eskz2zd9ld044uauxpgretus07dl",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1800000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1djfgvsetaf0vp7ww0dx6slpjwqfuvgnx455g95",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2064460000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xaxnwxzwwrhdq4j568djwas4eh6qljmmlmlkz3",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20086000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1d9slxs3w05j43ec78vwrvn00yzq9f64uftru9q",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1132920000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hxt04dsdmurtfx0s98zfj40j4sza7zrfwle5fd",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1420000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wwaek97n877dj9ed3lctm0yz0juw5zqfhsgjta",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "2069010000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1q43l074z0qqaxnhh3h0mnt4y85rccwdnkxkc9q",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1278260000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qza0lfp472xx9sdf6ctsh82xffh44ssua8hkfe",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20267460000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1eut0hdermdua985462zfuqrg6whyxj80ql8gr2",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1855940000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1cjy6r2w7l8nply2rmwvu2g0rjwdktgw5qvucju",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1062460000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1ayrk8vwqvrn266lwh7anjxnp2xtp2y8kud48uc",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "50326390000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1pg3xg396l35dfk7dcq4qyp5w2g0qk864e8jp4c",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "20461320000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rhc929egr6d65776n7z2ya8ay2z7r8pltdclta",
+                    "validator_addr": "qosval1vcfetxedhnkcfq8h3km2nmgtfmh0vhc0dm7pfm",
+                    "delegate_amount": "1057120000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "CVHicGEU8/XuzhCD7cpOMBUvDWvqMRiDNS0+nvpGOpw="
+              },
+              "signature": "XfFRQD5QPl1DmMreDJTaBrPWsaK1sRst/sdm0SmDHdpdjkfb7nazfw+ZKW1MUf5IWIcsuGQ7mpNfnkvqWY/2AA==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1txa4dh8akxzdj8pv453wj62yspuq4gjxnny0z7",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "ckkoa5e0hBMFv8DEkMSyJ8xLUUVuEllqETAL9m7u3A4="
+                },
+                "bond_tokens": "105012000000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "星红安",
+                  "logo": "http://validator-static.qoschain.info/public/logos/xha.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1fjk6sr0uplpuzg8yjlyvl7hud0al3fjq8ekpv3",
+                    "validator_addr": "qosval1txa4dh8akxzdj8pv453wj62yspuq4gjxtr2vyn",
+                    "delegate_amount": "17000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s2wmyjax3q08ya9a2w807zdxtq8t42hwugmwv6",
+                    "validator_addr": "qosval1txa4dh8akxzdj8pv453wj62yspuq4gjxtr2vyn",
+                    "delegate_amount": "28000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1txa4dh8akxzdj8pv453wj62yspuq4gjxnny0z7",
+                    "validator_addr": "qosval1txa4dh8akxzdj8pv453wj62yspuq4gjxtr2vyn",
+                    "delegate_amount": "0",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14zu4agxqr8hhxapn3rqlacmrrx36munlyaswu8",
+                    "validator_addr": "qosval1txa4dh8akxzdj8pv453wj62yspuq4gjxtr2vyn",
+                    "delegate_amount": "10012000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n6g88qqhn7u35crp8m7ulwyemv79zu2djlt877",
+                    "validator_addr": "qosval1txa4dh8akxzdj8pv453wj62yspuq4gjxtr2vyn",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yv28q54tynx668epk6m9vs4atjzln7wm2z32c0",
+                    "validator_addr": "qosval1txa4dh8akxzdj8pv453wj62yspuq4gjxtr2vyn",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "ruh2zI7h2DuE+ga1KURxszgzQ6l1yNlCoP/ztyBMZzI="
+              },
+              "signature": "K7gIjcH2O+TpwxjZW5heUrFmbUCGELJzwsQ36kuVDMrZVNF20RKQNWez5HTRZK+sHn3DaDG2+EubEAjb1t44BQ==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1qjpm5pdqgj8ms75zy76djd5ulhume80ql9e92l",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "ZsS0JvCpLJ/OZVUECbrAwvlNnf4Wx8upWI7GQNUABO8="
+                },
+                "bond_tokens": "378000000000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "X_Token",
+                  "logo": "http://validator-static.qoschain.info/public/logos/xtoken.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1qjpm5pdqgj8ms75zy76djd5ulhume80ql9e92l",
+                    "validator_addr": "qosval1qjpm5pdqgj8ms75zy76djd5ulhume80q84hxvj",
+                    "delegate_amount": "189000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fjk6sr0uplpuzg8yjlyvl7hud0al3fjq8ekpv3",
+                    "validator_addr": "qosval1qjpm5pdqgj8ms75zy76djd5ulhume80q84hxvj",
+                    "delegate_amount": "59000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1s2wmyjax3q08ya9a2w807zdxtq8t42hwugmwv6",
+                    "validator_addr": "qosval1qjpm5pdqgj8ms75zy76djd5ulhume80q84hxvj",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14zu4agxqr8hhxapn3rqlacmrrx36munlyaswu8",
+                    "validator_addr": "qosval1qjpm5pdqgj8ms75zy76djd5ulhume80q84hxvj",
+                    "delegate_amount": "50000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1n6g88qqhn7u35crp8m7ulwyemv79zu2djlt877",
+                    "validator_addr": "qosval1qjpm5pdqgj8ms75zy76djd5ulhume80q84hxvj",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1yv28q54tynx668epk6m9vs4atjzln7wm2z32c0",
+                    "validator_addr": "qosval1qjpm5pdqgj8ms75zy76djd5ulhume80q84hxvj",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "wIPzE/0c6m/hXk0umwR2ugMLWl+GuFTHsQ/52IvNl7Y="
+              },
+              "signature": "+bb9tWGxKj3nnmGhIpZQFV9FqcV0d2CU7J/Z8ylnalhz95Mp1ad/OWj/5tQwL6R+Qwm1M6zTqTtJB4fyWoHgBQ==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc1jrdsfn46ckzrp34sz3s83aa39rvwywuf5s2jjw",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "VRF7ZlAhn2bhXy+RaO8pHyanwRFEB5eDX+shcZMEU+Q="
+                },
+                "bond_tokens": "188249880000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "花花节点联盟",
+                  "logo": "http://validator-static.qoschain.info/public/logos/hhjdlm.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1ztru8cd7c07tldkhafaplwuh6yerdgrnz5ey0a",
+                    "validator_addr": "qosval1jrdsfn46ckzrp34sz3s83aa39rvwywufvqy35r",
+                    "delegate_amount": "77361000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jrdsfn46ckzrp34sz3s83aa39rvwywuf5s2jjw",
+                    "validator_addr": "qosval1jrdsfn46ckzrp34sz3s83aa39rvwywufvqy35r",
+                    "delegate_amount": "80000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fmkxql8lhfn5y776sys322ukh7j5s86pm3xuxz",
+                    "validator_addr": "qosval1jrdsfn46ckzrp34sz3s83aa39rvwywufvqy35r",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1xaxnwxzwwrhdq4j568djwas4eh6qljmmlmlkz3",
+                    "validator_addr": "qosval1jrdsfn46ckzrp34sz3s83aa39rvwywufvqy35r",
+                    "delegate_amount": "888880000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1hq79psw887vrmaukmrcrgdml0sjuwy7ttfv2x6",
+                    "validator_addr": "qosval1jrdsfn46ckzrp34sz3s83aa39rvwywufvqy35r",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jkkzhjxkrpvuxyq3dyrfdqjx3anf80ktchzmrx",
+                    "validator_addr": "qosval1jrdsfn46ckzrp34sz3s83aa39rvwywufvqy35r",
+                    "delegate_amount": "5000000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "EuKS12rbp5E8LtZURz8JTaOx5dHyiTMszLfaXvt5hG0="
+              },
+              "signature": "MBiVakpd+3M2qMD2C9oNTvZilOWq/lLA3SbTQnl/SOuSgxKHpgqder3lnI/zXvVcc/nV82wUY6w+F6+NqgYbDQ==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        },
+        {
+          "itx": [
+            {
+              "type": "stake/txs/TxCreateValidator",
+              "value": {
+                "owner": "qosacc14g2u2m0n5l8zgdq6e749pg477kpgh63eu6r7ld",
+                "cons_pub_key": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "eYtaYVDDz0ApPCIpGJF+AuAHwxcftbc1q0dDbyCAcQw="
+                },
+                "bond_tokens": "683667030000",
+                "is_compound": true,
+                "description": {
+                  "moniker": "颐和资本",
+                  "logo": "http://validator-static.qoschain.info/public/logos/yhzb.png",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "delegations": [
+                  {
+                    "delegator_addr": "qosacc1m9rd5tjy6p2phq4wd3834ewc6rmm5dxsyua4jv",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "14000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1u4qt6tylmfmqzj3y06rtsrrkw9ql0k7e86yzwz",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "15000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1z4kas9kykta8lflmn2zy6hq7kzalrf7jdpxs7r",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc17786jgsxh3hvt3whuce670s82ezyusdsmk27v8",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "60000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1zfttmvr7pjv4cx5vvxrfqjar6fs6d68a28wlt2",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fpzcep5q0fzqhd3l3yhz0lstut6967e5kpwdk7",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "19999990000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1dddcvg9l5yjhyzhalzj89zl9f0tag4dx24acuu",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "10340000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1qc5q7p3mrykl7guavht4pq4ae86uhs2xyvckq2",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc10mdsap4h7etejf78q85m40fppm90lxhrfa039u",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "10000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1jrzdlj6dtka4mr837e52jn73erf4pp3yhdlhax",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1j25ekxcrljj844f5prhk2u4c4u8g2cwszlf7nv",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "4540000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1g5rlwtv2e7n5va59x48jmf5cgxvrccqsfe4jx0",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "80000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1fr2j47424g7nqqzjv4sck8dukr4zs9y94uuurt",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1f9d30pwmmsxtud7lrvu85qgfg4e63rm664xgns",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "53590000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc15sdutz5c6g6lm83pucvdx5tzm32qal4chcy8ns",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "5600000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1rpna8ngw9s0qdas5j7ee6cxf3mfnenx6a3a5u2",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "2200000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc14g2u2m0n5l8zgdq6e749pg477kpgh63eu6r7ld",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "21925200000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1v89x4zgjj3j8xtnewe2f83hjynxjlen5ekms5s",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "26300000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1pfc9a2kqwx692y80ntqd2xs3jtmzwgfhnnyefj",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "7500000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1t04g8vnuhxccy2ynscdp0zv47qcfs2wr48g5zq",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "11000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1flvywwhqe2gsl7f7357w0870gthl3tutckz4dd",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "900000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc153qjw7uhmxl2q5259thuyncx0pr5pv8ryd8fve",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1h9c7nndqacle04yc3g65n2agylnypg28smgs9s",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "690000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1knylz0dgzj4d0ynvwj8yw9fv9mlrcudg0nrllc",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "20000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1023fucqqgchvxlgvqv2vk4jg6u68zllfvsnhsd",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "28181840000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc173jll7mamc6h0z02d2zuafkdar8alsvkksahpj",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "2000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1dnm4j86stwknjyl85qdzd2qqum6x9jalaahcct",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "30000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wu0r5r6zhhaznkfv9esecr2x7rd8qnm9tg5crq",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "6300000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1wd2f9fz62wkwaq5ypmryxn7upqsntcnx3en3sf",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "50000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc1tpcu8ux6g43gafzz0h2cews8exn3x7x53y2k50",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "110000000000",
+                    "is_compound": true
+                  },
+                  {
+                    "delegator_addr": "qosacc18ajqlln6ejclydz7299c5xxwxcdmhaw7nam2zj",
+                    "validator_addr": "qosval14g2u2m0n5l8zgdq6e749pg477kpgh63ey2daeq",
+                    "delegate_amount": "1600000000",
+                    "is_compound": true
+                  }
+                ]
+              }
+            }
+          ],
+          "sigature": [
+            {
+              "pubkey": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "5d/2aVku/n6ZmE805QYDQMirChFHN4p4NmZVDs8iFOw="
+              },
+              "signature": "HmoV1zoT65WFRhp1m2gB7iqfH0lJNI6t5uPmuQvpRIWq7Ic8u3IuDZCI2ehzB+g8WEiTtYq0kNz1EmQLdXgQAg==",
+              "nonce": "1"
+            }
+          ],
+          "chainid": "qoschain-1",
+          "maxgas": "1000000"
+        }
+      ],
+      "params": {
+        "max_validator_cnt": "21",
+        "voting_status_len": "10000",
+        "voting_status_least": "7000",
+        "survival_secs": "28800",
+        "unbond_frozen_height": "259200",
+        "max_evidence_age": "1814400000000000",
+        "slash_fraction_double_sign": "0.200000000000000000",
+        "slash_fraction_downtime": "0.000100000000000000"
       },
-      "qscs": null
+      "validators": null,
+      "val_votes_info": null,
+      "val_votes_in_window": null,
+      "delegators_info": null,
+      "delegator_unbond_info": null,
+      "redelegations_info": null,
+      "current_validators": null
+    },
+    "approve": {
+      "approves": null
     }
   }
 }
