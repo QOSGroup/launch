@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-12-19T08:56:05.01407415Z",
+  "genesis_time": "2019-12-19T09:30:11.737428629Z",
   "chain_id": "qoschain-1",
   "consensus_params": {
     "block": {
@@ -18,25 +18,12 @@
   },
   "app_hash": "",
   "app_state": {
-    "guardian": {
-      "guardians": [
-        {
-          "description": "",
-          "guardian_type": 1,
-          "address": "qosacc1m5f6se6u2myrga7l3jhacy9hcnftszvgn0wqus",
-          "creator": ""
-        }
-      ]
-    },
     "qcp": {
       "ca_root_pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "OqkjpX+yt+T0eeClSZNkphVf+ltVhx1LXs07+K8uDfg="
       },
       "qcps": null
-    },
-    "approve": {
-      "approves": null
     },
     "gov": {
       "starting_proposal_id": "1",
@@ -71,48 +58,6 @@
       },
       "proposals": null
     },
-    "mint": {
-      "inflation_phrases": [
-        {
-          "end_time": "2023-10-20T00:00:00Z",
-          "total_amount": "25500000000000",
-          "applied_amount": "0"
-        },
-        {
-          "end_time": "2027-10-20T00:00:00Z",
-          "total_amount": "12750000000000",
-          "applied_amount": "0"
-        },
-        {
-          "end_time": "2031-10-20T00:00:00Z",
-          "total_amount": "6375000000000",
-          "applied_amount": "0"
-        },
-        {
-          "end_time": "2035-10-20T00:00:00Z",
-          "total_amount": "3187500000000",
-          "applied_amount": "0"
-        },
-        {
-          "end_time": "2039-10-20T00:00:00Z",
-          "total_amount": "1593750000000",
-          "applied_amount": "0"
-        },
-        {
-          "end_time": "2043-10-20T00:00:00Z",
-          "total_amount": "796875000000",
-          "applied_amount": "0"
-        },
-        {
-          "end_time": "2047-10-20T00:00:00Z",
-          "total_amount": "796875000000",
-          "applied_amount": "0"
-        }
-      ],
-      "first_block_time": "1576745765",
-      "applied_qos_amount": "49000000000000",
-      "total_qos_amount": "100000000000000"
-    },
     "stake": {
       "gen_txs": null,
       "params": {
@@ -133,12 +78,18 @@
       "redelegations_info": null,
       "current_validators": null
     },
-    "qsc": {
-      "ca_root_pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
-      },
-      "qscs": null
+    "approve": {
+      "approves": null
+    },
+    "guardian": {
+      "guardians": [
+        {
+          "description": "",
+          "guardian_type": 1,
+          "address": "qosacc1m5f6se6u2myrga7l3jhacy9hcnftszvgn0wqus",
+          "creator": ""
+        }
+      ]
     },
     "bank": {
       "accounts": [
@@ -3132,7 +3083,7 @@
           "qscs": []
         },
         {
-          "account_address": "qosacc1ykmxuvqt6j89tjzz7w0au728uvuh9akpsvudp5",
+          "account_address": "qosacc1xcf5tknfw997xrng0fts0yvzy6hg0chl5s30kr",
           "public_key": "",
           "nonce": 0,
           "qos": "7916666666670",
@@ -3140,16 +3091,15 @@
         }
       ],
       "lock_info": {
-        "locked_account": "qosacc1ykmxuvqt6j89tjzz7w0au728uvuh9akpsvudp5",
+        "locked_account": "qosacc1xcf5tknfw997xrng0fts0yvzy6hg0chl5s30kr",
         "receiver": "qosacc1raqeulxtdp29r3k9xvklj49stqwyaqlvscyeey",
         "total_amount": "10000000000000",
         "released_amount": "2083333333330",
         "release_time": "2020-01-21T00:00:00Z",
         "release_interval": "30",
-        "release_times": "20"
+        "release_times": "19"
       }
     },
-    "params": null,
     "distribution": {
       "community_fee_pool": "0",
       "last_block_proposer": "",
@@ -3165,6 +3115,56 @@
         "delegator_income_period_height": "720",
         "gas_per_unit_cost": "100"
       }
+    },
+    "params": null,
+    "mint": {
+      "inflation_phrases": [
+        {
+          "end_time": "2023-10-20T00:00:00Z",
+          "total_amount": "25500000000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2027-10-20T00:00:00Z",
+          "total_amount": "12750000000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2031-10-20T00:00:00Z",
+          "total_amount": "6375000000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2035-10-20T00:00:00Z",
+          "total_amount": "3187500000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2039-10-20T00:00:00Z",
+          "total_amount": "1593750000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2043-10-20T00:00:00Z",
+          "total_amount": "796875000000",
+          "applied_amount": "0"
+        },
+        {
+          "end_time": "2047-10-20T00:00:00Z",
+          "total_amount": "796875000000",
+          "applied_amount": "0"
+        }
+      ],
+      "first_block_time": "1576747811",
+      "applied_qos_amount": "49000000000000",
+      "total_qos_amount": "100000000000000"
+    },
+    "qsc": {
+      "ca_root_pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "/vO2DLSSKzF5nonSuWpmGWFUlrsRSuOJ0HwO693NLO8="
+      },
+      "qscs": null
     }
   }
 }
