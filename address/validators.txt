@@ -16,6 +16,7 @@ Qwin_Wallet qosacc1nfx7r6zkt06hj0x22534m3ac0ctd2cn8a7qymq 15244 http://validator
 锐格钱包 qosacc1ke0crjwzy9v0c4mdc4ruyup3dvmk9kpfs4dt4m 0 http://validator-static.qoschain.info/public/logos/rgqb.png ""
 古雷山资本 qosacc1kurqus6dq8fpkqtj44cym0l30sym2yxkkskzqm 14698600 http://validator-static.qoschain.info/public/logos/glszb.png ""
 起源资本 qosacc1m9rpduzhjmqgfgn0eqrj62cf8a3may8fqs0pzz 20000000 http://validator-static.qoschain.info/public/logos/qyzb.png ""
-彼岸花资本 qosacc1kn0yzutlexq94jht2al0n0f3mkvg7dz4k2dw5u 14908709 http:// ""
-Bit_Cat qosacc1cg5d24r0ulsehdg4eree95z0zjmhg69wkrqtqd 3036976 http:// ""
-币多分 qosacc1hhzfj2d05l5vmrs4nx5mrhklkxauw27f86uzwn 9256382 http:// ""
+彼岸花资本 qosacc1kn0yzutlexq94jht2al0n0f3mkvg7dz4k2dw5u 14908709 "" ""
+Bit_Cat qosacc1cg5d24r0ulsehdg4eree95z0zjmhg69wkrqtqd 3036976 "" ""
+币多分 qosacc1hhzfj2d05l5vmrs4nx5mrhklkxauw27f86uzwn 9256382 "" ""
+
